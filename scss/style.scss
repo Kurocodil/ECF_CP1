@@ -22,6 +22,7 @@ body{
         }
     }
     >footer{
-        background-color: map-get(c.$colors,oranger);
+        background-image:linear-gradient(15deg, blue,map-get(c.$colors,oranger)) ;
+
     }
 }
