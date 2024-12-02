@@ -1,0 +1,27 @@
+// Import SCSS
+@use "sass:map";
+@use '_extends.scss';
+@use '_mixins.scss'   as m;
+@use '_colors.scss'  as c;
+@use '_typo.scss'    as t;
+
+
+
+body{
+    >main{
+        // CSS Accueil
+        >.accueil{
+            >aside{
+                background-color: map-get(c.$colors,bleu);
+                width: 25%;
+                height: auto;
+            }
+            >.content-accueil{
+                background-color: map-get(c.$colors,blanc);
+            }
+        }
+    }
+    >footer{
+        background-color: map-get(c.$colors,oranger);
+    }
+}
