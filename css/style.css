@@ -1,30 +1,10 @@
-body {
-  background-color: #bdb6a0;
+html {
+  background-image: url(/assets/imgs/fond.jpg);
+}
+html body {
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0em 15em 0em 15em;
   display: flex;
   flex-direction: column;
   min-height: 99vh;
-  color: white;
-}
-body > main > .accueil {
-  display: flex;
-  width: 100%;
-  padding: 0;
-}
-body > main > .accueil > .line-present {
-  padding: 1em;
-  background-color: #1e3d59;
-  width: 15%;
-  min-height: 93.3vh;
-  display: flex;
-}
-body > main > .accueil > .line-present > img {
-  width: 45%;
-  height: 10%;
-}
-body > main > .accueil > .content-accueil {
-  width: 75%;
-}
-body > footer {
-  background-image: linear-gradient(145deg, #1e3d59, #ff6e40);
-  margin-top: auto;
 }/*# sourceMappingURL=style.css.map */
