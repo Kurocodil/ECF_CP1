@@ -43,5 +43,33 @@
             <td>1</td>
             <td>Mathéo</td>
         </tr>
+        <tr>
+            <td>Création HTML page d'accueil</td>
+            <td>Elevé</td>
+            <td>en cours</td>
+            <td>2</td>
+            <td>Mathéo</td>
+        </tr>
+        <tr>
+            <td>Création HTML page d'accueil</td>
+            <td>Elevé</td>
+            <td>en cours</td>
+            <td>2</td>
+            <td>Mathéo</td>
+        </tr>
+        <tr>
+            <td>Création CSS page contact</td>
+            <td>Elevé</td>
+            <td>en cours</td>
+            <td>2</td>
+            <td>Mathéo</td>
+        </tr>
+        <tr>
+            <td>Création CSS page contact</td>
+            <td>Elevé</td>
+            <td>en cours</td>
+            <td>2</td>
+            <td>Mathéo</td>
+        </tr>
     </tbody>
 </table>

@@ -93,3 +93,42 @@
 * Remplissage du fichier Sprint
 #### **Problème rencontrés** :
 * Aucun
+
+# Mardi 3 Décembre 2024
+## Sprint 3 (8h - 12h)
+#### **Ojectif du sprint** :
+
+<table>
+    <thead>
+        <th>A faire</th>
+        <th>Responsable</th>
+        <th>Etat</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Création page HTML Accueil</td>
+            <td>Mathéo</td>
+            <td>Fait</td>
+        </tr>
+        <tr>
+            <td>Création CSS page Accueil</td>
+            <td>Mathéo</td>
+            <td>Fait</td>
+        </tr>
+        <tr>
+            <td>Création HTML page contact</td>
+            <td>Mathéo</td>
+            <td>Fait</td>
+        </tr>
+        <tr>
+            <td>Création CSS page contact</td>
+            <td>Mathéo</td>
+            <td>Fait</td>
+        </tr>
+    </tbody>
+</table>
+
+### **Ce qu'il s'est bien passé** :
+* 
+#### **Problème rencontrés** :
+* 
