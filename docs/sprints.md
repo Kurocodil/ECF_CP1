@@ -108,23 +108,152 @@
         <tr>
             <td>Finition de la gestion de projet</td>
             <td>Mathéo</td>
-            <td>Fait</td>
+            <td>En cours</td>
         </tr>
-        <!-- <tr>
-            <td>Création CSS page Accueil</td>
+    </tbody>
+</table>
+
+### **Ce qu'il s'est bien passé** :
+* 
+#### **Problème rencontrés** :
+* 
+
+## Sprint 4 (12h - 17h)
+#### **Ojectif du sprint** :
+
+<table>
+    <thead>
+        <th>A faire</th>
+        <th>Responsable</th>
+        <th>Etat</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mise a jour Prototype</td>
             <td>Mathéo</td>
-            <td>Fait</td>
+            <td>Pas commencé</td>
+        </tr>
+    </tbody>
+</table>
+
+### **Ce qu'il s'est bien passé** :
+* 
+#### **Problème rencontrés** :
+* 
+
+# Jeudi 5 Décembre
+## Sprint 5 (8h - 12h)
+#### **Ojectif du sprint** :
+
+<table>
+    <thead>
+        <th>A faire</th>
+        <th>Responsable</th>
+        <th>Etat</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Création du squelette HTML page d'accueil</td>
+            <td>Mathéo</td>
+            <td>Pas commencé</td>
         </tr>
         <tr>
-            <td>Création HTML page contact</td>
+            <td>Création du squelette HTML page réalisation</td>
             <td>Mathéo</td>
-            <td>Fait</td>
+            <td>Pas commencé</td>
         </tr>
         <tr>
-            <td>Création CSS page contact</td>
+            <td>Création du squelette HTML page CV</td>
             <td>Mathéo</td>
-            <td>Fait</td>
-        </tr> -->
+            <td>Pas commencé</td>
+        </tr>
+        <tr>
+            <td>Création du squelette HTML page contact</td>
+            <td>Mathéo</td>
+            <td>Pas commencé</td>
+        </tr>
+        <tr>
+            <td>Création du squelette HTML page mentions</td>
+            <td>Mathéo</td>
+            <td>Pas commencé</td>
+        </tr>
+    </tbody>
+</table>
+
+### **Ce qu'il s'est bien passé** :
+* 
+#### **Problème rencontrés** :
+* 
+
+## Sprint 6 (12h - 17h)
+#### **Ojectif du sprint** :
+
+<table>
+    <thead>
+        <th>A faire</th>
+        <th>Responsable</th>
+        <th>Etat</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mise en page de la page d'accueil</td>
+            <td>Mathéo</td>
+            <td>Pas commencé</td>
+        </tr>
+        <tr>
+            <td>Mise en page de la page réalisation</td>
+            <td>Mathéo</td>
+            <td>Pas commencé</td>
+        </tr>
+        <tr>
+            <td>Mise en page de la page CV</td>
+            <td>Mathéo</td>
+            <td>Pas commencé</td>
+        </tr>
+        <tr>
+            <td>Mise en page de la page contact</td>
+            <td>Mathéo</td>
+            <td>Pas commencé</td>
+        </tr>
+        <tr>
+            <td>Mise en page de la page mentions</td>
+            <td>Mathéo</td>
+            <td>Pas commencé</td>
+        </tr>
+    </tbody>
+</table>
+
+### **Ce qu'il s'est bien passé** :
+* 
+#### **Problème rencontrés** :
+* 
+
+# Vendredi 6 Décembre
+## Sprint 7 (8h - 12h)
+#### **Ojectif du sprint** :
+
+<table>
+    <thead>
+        <th>A faire</th>
+        <th>Responsable</th>
+        <th>Etat</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Réflexion Fonctionnaité JavaScript</td>
+            <td>Mathéo</td>
+            <td>Pas commencé</td>
+        </tr>
+        <tr>
+            <td>Pseudo-code Javascript</td>
+            <td>Mathéo</td>
+            <td>Pas commencé</td>
+        </tr>
+        <tr>
+            <td>Implémentation JavaScript</td>
+            <td>Mathéo</td>
+            <td>Pas commencé</td>
+        </tr>
     </tbody>
 </table>
 
