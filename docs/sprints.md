@@ -106,11 +106,11 @@
     </thead>
     <tbody>
         <tr>
-            <td>Création page HTML Accueil</td>
+            <td>Finition de la gestion de projet</td>
             <td>Mathéo</td>
             <td>Fait</td>
         </tr>
-        <tr>
+        <!-- <tr>
             <td>Création CSS page Accueil</td>
             <td>Mathéo</td>
             <td>Fait</td>
@@ -124,7 +124,7 @@
             <td>Création CSS page contact</td>
             <td>Mathéo</td>
             <td>Fait</td>
-        </tr>
+        </tr> -->
     </tbody>
 </table>
 
