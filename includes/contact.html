@@ -16,24 +16,46 @@
 <body>
     <!-- Header Body -->
     <header>
-        <div class="Navigation">
-
+        <div class="navigation">
+            <ul>
+                <li class="navBtn" data-target="home">Accueil</li>
+                <li class="navBtn" data-target="resume">CV</li>
+                <li class="navBtn" data-target="projects">PROJETS</li>
+                <li class="navBtn" data-target="mention">MENTIONS</li>
+                <li class="navBtn" data-target="contact">CONTACT</li>
+            </ul>
         </div>
     </header>
 
     <!-- Main Body -->
     <main>
-        <div class="container">
-
-        </div>
+        <h1>Contactez-nous</h1>
+        <form>
+            <div class="row">
+                <div class="col-lg-6">
+                    <label for="nom">Nom</label><br>
+                    <input type="text" id="nom">
+                </div>
+                <div class="col-lg-6">
+                    <label for="prenom">Prénom</label><br>
+                    <input type="text" id="prenom">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg">
+                    <label for="mail">Email</label><br>
+                    <input type="email" id="mail">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg">
+                    <label for="message">Message</label><br>
+                    <textarea id="message"></textarea>
+                </div>
+            </div>
+            <button type="submit" id="contactBtn">Envoyer</button>
+        </form>
     </main>
-
-    <!-- Footer Body -->
-    <footer>
-        <div class="Navigation">
-            
-        </div>
-    </footer>
 
     <!-- Implémentation du JavaScript  -->
     <script src="../js/frameworks/bootstrap.bundle.min.js"></script>
