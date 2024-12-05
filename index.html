@@ -18,9 +18,9 @@
     <header>
         <div class="navigation">
             <ul>
-                <li class="navBtn" data-target="home">ACCUEIL</li>
-                <li class="navBtn" data-target="resume">CV</li>
-                <li class="navBtn" data-target="projects">PROJETS</li>
+                <li class="navBtn dyna" data-target="home">ACCUEIL</li>
+                <li class="navBtn dyna" data-target="resume">CV</li>
+                <li class="navBtn dyna" data-target="projects">PROJETS</li>
                 <li class="navBtn" data-target="mention">MENTIONS</li>
                 <li class="navBtn" data-target="contact">CONTACT</li>
             </ul>
@@ -29,147 +29,147 @@
 
     <main>
         <!-- Page Accueil -->
-        <div class="container-fluid pages" id="home">
-            <section class="Accueil-top">
-                <header>
-                    <h1>MATHEO SIRON</h1>
-                </header>
-                <article>
+        <div class="container">
+            <div class="home page" id="home">
+                <h1>MATHEO SIRON</h1>
+                <div>
                     <div>
                         <img src="assets/imgs/devbande.gif" alt="Bandeau Développeur Web">
                     </div>
-                    <p>Je m’appelle Mathéo Siron, je suis passionné depuis plusieurs années par le développement web,
-                         et aujourd’hui je suis apprenti développeur en Full-stack. J’ai à l’heure actuelle, beaucoup 
-                         plus d’appétence pour la partie Front-end de la création de site, mais n’en reste pas moins curieux, 
-                         et motivé par le côté Back-end de la programmation. Je préfère dans le front des designs assez coloré 
-                         mais assez sobre</p>
-                </article>
-            </section>
-
-            <div class="row cartes">
-                <div class="card-accueil col-lg"> <!-- Gérer la taille de la carte -->
-                    <h2><a href="">CV</a></h2> <!-- Mettre en position absolue comme pour Shoesplash -->
-                    <img src="assets/imgs/fondCV.jpg" alt="CV" width="200px"/>
+                    <p>
+                        Je m’appelle Mathéo Siron, je suis passionné depuis plusieurs années par le développement web, 
+                        et aujourd’hui je suis apprenti développeur en Full-stack. J’ai à l’heure actuelle, beaucoup 
+                        plus d’appétence pour la partie Front-end de la création de site, mais n’en reste pas moins curieux, 
+                        et motivé par le côté Back-end de la programmation. Je préfère dans le front des designs assez coloré 
+                        mais assez sobre.
+                    </p>
                 </div>
-
-                <div class="card-accueil colg-lg"> <!-- Gérer la taille de la carte -->
-                    <h2><a href="">PROJETS</a></h2> <!-- Mettre en position absolue comme pour Shoesplash -->
-                    <img src="assets/imgs/fondProjet.jpg" alt="Projet" width="200px"/>
+                <div class="row cartes">
+                    <div class="card-home col-lg"> <!-- Gérer la taille de la carte -->
+                        <h2><a href="">CV</a></h2> <!-- Mettre en position absolue comme pour Shoesplash -->
+                        <img src="assets/imgs/fondCV.jpg" alt="CV" width="200px"/>
+                    </div>
+                    <div class="card-home colg-lg"> <!-- Gérer la taille de la carte -->
+                        <h2><a href="">PROJETS</a></h2> <!-- Mettre en position absolue comme pour Shoesplash -->
+                        <img src="assets/imgs/fondProjet.jpg" alt="Projet" width="200px"/>
+                    </div>
                 </div>
             </div>
+
+            <!-- Page CV -->
+            <div class="resume page" id="resume">
+                <img src="assets/imgs/CV_matheo_siron_dwwm.pdf" alt="CV">
+                <a href="assets/imgs/CV_matheo_siron_dwwm.pdf">Téléchargez le CV</a>
+            </div>
+            <!-- Page Projets -->
+            <div class="projects page" id="projects">
+                <section>
+                    <header>
+                        <h1>Projets</h1>
+                    </header>
+                    <article>
+                        <input type="text" id="filtre" placeholder="Nom du projet">
+    
+                        <!-- Cartes Projets -->
+                        <div class="row">
+                            <!-- Carte 1 -->
+                            <section class="carte col-lg" data-titre="AC/DC">
+                                <header>
+                                    <h4>AC/DC</h4>
+                                </header>
+                                <article>
+                                    <img src="assets/imgs/acdc.PNG" alt="AC/DC" width="200px">
+                                </article>
+                                <footer>
+                                    Description
+                                </footer>
+                            </section>
+    
+                            <!-- Carte 2 -->
+                            <section class="carte col-lg" data-titre="L'antre du livre">
+                                <header>
+                                    <h4>L'antre du livre</h4>
+                                </header>
+                                <article>
+                                    <img src="assets/imgs/antre_du_livre.PNG" alt="L'antre" width="200px">
+                                </article>
+                                <footer>
+                                    Description
+                                </footer>
+                            </section>
+    
+                            <!-- Carte 3 -->
+                            <section class="carte col-lg" data-titre="Artistes Peintres">
+                                <header>
+                                    <h4>Artistes Peintres</h4>
+                                </header>
+                                <article>
+                                    <img src="assets/imgs/artistes_peintres.PNG" alt="Artistes Peintres" width="200px">
+                                </article>
+                                <footer>
+                                    Description
+                                </footer>
+                            </section>
+    
+                            <!-- Carte 4 -->
+                            <section class="carte col-lg" data-titre="Choco Boom">
+                                <header>
+                                    <h4>Choco Boom</h4>
+                                </header>
+                                <article>
+                                    <img src="assets/imgs/chocoboom.PNG" alt="Choco Boom" width="200px">
+                                </article>
+                                <footer>
+                                    Description
+                                </footer>
+                            </section>
+    
+                            <!-- Carte 5 -->
+                            <section class="carte col-lg" data-titre="Galerie d'animaux">
+                                <header>
+                                    <h4>Galerie d'animaux</h4>
+                                </header>
+                                <article>
+                                    <img src="assets/imgs/galerie_animaux.PNG" alt="Galerie" width="200px">
+                                </article>
+                                <footer>
+                                    Description
+                                </footer>
+                            </section>
+    
+                            <!-- Carte 6 -->
+                            <section class="carte col-lg" data-titre="History Game">
+                                <header>
+                                    <h4>History Game</h4>
+                                </header>
+                                <article>
+                                    <img src="assets/imgs/history_game.PNG" alt="History Game" width="200px">
+                                </article>
+                                <footer>
+                                    Description
+                                </footer>
+                            </section>
+    
+                            <!-- Carte 7 -->
+                            <section class="carte col-lg" data-titre="Shoesplash">
+                                <header>
+                                    <h4>Shoesplash</h4>
+                                </header>
+                                <article>
+                                    <img src="assets/imgs/shoes_plash.PNG" alt="Shoesplash" width="200px">
+                                </article>
+                                <footer>
+                                    Description
+                                </footer>
+                            </section>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            
         </div>
 
-        <!-- Page CV -->
-        <div class="container pages" id="resume">
-            <img src="assets/imgs/CV_matheo_siron_dwwm.pdf" alt="CV">
-            <a href="assets/imgs/CV_matheo_siron_dwwm.pdf">Téléchargez le CV</a>
-        </div>
 
-        <!-- Page Projets -->
-        <div class="container pages" id="projects">
-            <section>
-                <header>
-                    <h1>Projets</h1>
-                </header>
-                <article>
-                    <input type="text" id="filtre" placeholder="Nom du projet">
-
-                    <!-- Cartes Projets -->
-                    <div class="row">
-                        <!-- Carte 1 -->
-                        <section class="carte col-lg" data-titre="AC/DC">
-                            <header>
-                                <h4>AC/DC</h4>
-                            </header>
-                            <article>
-                                <img src="assets/imgs/acdc.PNG" alt="AC/DC" width="200px">
-                            </article>
-                            <footer>
-                                Description
-                            </footer>
-                        </section>
-
-                        <!-- Carte 2 -->
-                        <section class="carte col-lg" data-titre="L'antre du livre">
-                            <header>
-                                <h4>L'antre du livre</h4>
-                            </header>
-                            <article>
-                                <img src="assets/imgs/antre_du_livre.PNG" alt="L'antre" width="200px">
-                            </article>
-                            <footer>
-                                Description
-                            </footer>
-                        </section>
-
-                        <!-- Carte 3 -->
-                        <section class="carte col-lg" data-titre="Artistes Peintres">
-                            <header>
-                                <h4>Artistes Peintres</h4>
-                            </header>
-                            <article>
-                                <img src="assets/imgs/artistes_peintres.PNG" alt="Artistes Peintres" width="200px">
-                            </article>
-                            <footer>
-                                Description
-                            </footer>
-                        </section>
-
-                        <!-- Carte 4 -->
-                        <section class="carte col-lg" data-titre="Choco Boom">
-                            <header>
-                                <h4>Choco Boom</h4>
-                            </header>
-                            <article>
-                                <img src="assets/imgs/chocoboom.PNG" alt="Choco Boom" width="200px">
-                            </article>
-                            <footer>
-                                Description
-                            </footer>
-                        </section>
-
-                        <!-- Carte 5 -->
-                        <section class="carte col-lg" data-titre="Galerie d'animaux">
-                            <header>
-                                <h4>Galerie d'animaux</h4>
-                            </header>
-                            <article>
-                                <img src="assets/imgs/galerie_animaux.PNG" alt="Galerie" width="200px">
-                            </article>
-                            <footer>
-                                Description
-                            </footer>
-                        </section>
-
-                        <!-- Carte 6 -->
-                        <section class="carte col-lg" data-titre="History Game">
-                            <header>
-                                <h4>History Game</h4>
-                            </header>
-                            <article>
-                                <img src="assets/imgs/history_game.PNG" alt="History Game" width="200px">
-                            </article>
-                            <footer>
-                                Description
-                            </footer>
-                        </section>
-
-                        <!-- Carte 7 -->
-                        <section class="carte col-lg" data-titre="Shoesplash">
-                            <header>
-                                <h4>Shoesplash</h4>
-                            </header>
-                            <article>
-                                <img src="assets/imgs/shoes_plash.PNG" alt="Shoesplash" width="200px">
-                            </article>
-                            <footer>
-                                Description
-                            </footer>
-                        </section>
-                    </div>
-                </article>
-            </section>
-        </div>
 
     </main>
 

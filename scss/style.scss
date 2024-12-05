@@ -14,6 +14,16 @@ html{
         display: flex;
         flex-direction: column;
         min-height: 99vh;
-    
+        >main{
+            >.container{
+                // Affichage principal
+                >#home{
+                    display:block;
+                }
+                >.resume, >.projects{
+                    display:none;
+                }
+            }
+        }
     }
 }
