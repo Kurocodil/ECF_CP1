@@ -18,21 +18,26 @@
     <header>
         <div class="navigation">
             <ul>
-                <li class="navBtn" data-target="accueil">Accueil</li>
-                <li class="navBtn" data-target="cv">CV</li>
+                <li class="navBtn" data-target="home">Accueil</li>
+                <li class="navBtn" data-target="resume">CV</li>
+                <li class="navBtn" data-target="projects">PROJETS</li>
+                <li class="navBtn" data-target="mention">MENTIONS</li>
+                <li class="navBtn" data-target="contact">CONTACT</li>
             </ul>
         </div>
     </header>
 
     <main>
         <!-- Page Accueil -->
-        <div class="container pages" id="accueil">
+        <div class="container pages" id="home">
             <section class="Accueil-top">
                 <header>
                     <h1>MATHEO SIRON</h1>
                 </header>
                 <article>
-                    <img src="assets/imgs/devbande.gif" alt="Bandeau Développeur Web">
+                    <div>
+                        <img src="assets/imgs/devbande.gif" alt="Bandeau Développeur Web">
+                    </div>
                     <p>Je m’appelle Mathéo Siron, je suis passionné depuis plusieurs années par le développement web,
                          et aujourd’hui je suis apprenti développeur en Full-stack. J’ai à l’heure actuelle, beaucoup 
                          plus d’appétence pour la partie Front-end de la création de site, mais n’en reste pas moins curieux, 
@@ -40,12 +45,13 @@
                          mais assez sobre</p>
                 </article>
             </section>
-            <div class="cartes">
-                <section class="card-accueil"> <!-- Gérer la taille de la carte -->
+
+            <div class="row cartes">
+                <section class="card-accueil col-lg"> <!-- Gérer la taille de la carte -->
                     <h2><a href="">CV</a></h2> <!-- Mettre en position absolue comme pour Shoesplash -->
                     <img src="assets/imgs/fondCV.jpg" alt="CV" width="200px"/>
                 </section>
-                <section class="card-accueil"> <!-- Gérer la taille de la carte -->
+                <section class="card-accueil colg-lg"> <!-- Gérer la taille de la carte -->
                     <h2><a href="">PROJETS</a></h2> <!-- Mettre en position absolue comme pour Shoesplash -->
                     <img src="assets/imgs/fondProjet.jpg" alt="Projet" width="200px"/>
                 </section>
@@ -53,11 +59,117 @@
         </div>
 
         <!-- Page CV -->
-        <div class="container pages" id="cv">
-            qseifgns
+        <div class="container pages" id="resume">
+            
+
         </div>
 
         <!-- Page Projets -->
+        <div class="container pages" id="projects">
+            <section>
+                <header>
+                    <h1>Projets</h1>
+                </header>
+                <article>
+                    <input type="text" id="filtre" placeholder="Nom du projet">
+
+                    <!-- Cartes Projets -->
+                    <div class="row">
+                        <!-- Carte 1 -->
+                        <section class="carte col-lg">
+                            <header>
+                                <h4>Titre</h4>
+                            </header>
+                            <article>
+                                <img src="" alt="img1">
+                            </article>
+                            <footer>
+                                Description
+                            </footer>
+                        </section>
+
+                        <!-- Carte 2 -->
+                        <section class="carte col-lg">
+                            <header>
+                                <h4>Titre</h4>
+                            </header>
+                            <article>
+                                <img src="" alt="img1">
+                            </article>
+                            <footer>
+                                Description
+                            </footer>
+                        </section>
+
+                        <!-- Carte 3 -->
+                        <section class="carte col-lg">
+                            <header>
+                                <h4>Titre</h4>
+                            </header>
+                            <article>
+                                <img src="" alt="img1">
+                            </article>
+                            <footer>
+                                Description
+                            </footer>
+                        </section>
+
+                        <!-- Carte 4 -->
+                        <section class="carte col-lg">
+                            <header>
+                                <h4>Titre</h4>
+                            </header>
+                            <article>
+                                <img src="" alt="img1">
+                            </article>
+                            <footer>
+                                Description
+                            </footer>
+                        </section>
+
+                        <!-- Carte 5 -->
+                        <section class="carte col-lg">
+                            <header>
+                                <h4>Titre</h4>
+                            </header>
+                            <article>
+                                <img src="" alt="img1">
+                            </article>
+                            <footer>
+                                Description
+                            </footer>
+                        </section>
+
+                        <!-- Carte 6 -->
+                        <section class="carte col-lg">
+                            <header>
+                                <h4>Titre</h4>
+                            </header>
+                            <article>
+                                <img src="" alt="img1">
+                            </article>
+                            <footer>
+                                Description
+                            </footer>
+                        </section>
+
+                        <!-- Carte 7 -->
+                        <section class="carte col-lg">
+                            <header>
+                                <h4>Titre</h4>
+                            </header>
+                            <article>
+                                <img src="" alt="img1">
+                            </article>
+                            <footer>
+                                Description
+                            </footer>
+                        </section>
+                    </div>
+                </article>
+            </section>
+        </div>
+
     </main>
 
     <!-- Implémentation du JavaScript  -->
