@@ -27,3 +27,26 @@
         }
     }
 }
+
+@mixin carteDesign{
+    h2{
+        display: flex;
+        position: absolute;
+        top:18.5em;
+        // flex-direction: column;
+        >a{
+            text-decoration: none;
+            color:black;
+            background-color: rgb(128, 128, 128,0.5);
+            padding:0.5em 1em 0.5em 1em;
+            border-radius:25px;
+        }
+    }
+    img{
+        object-fit: cover;
+        width: 20em;
+        height: 20em;
+        border:solid 7px rgb(128, 128, 128, 0.3);
+        border-radius:25px;
+    }
+}

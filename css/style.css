@@ -1,12 +1,26 @@
+@font-face {
+  font-family: "Italiana";
+  src: url("/fonts/Italiana-Regular.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Josefin";
+  src: url("/fonts/JosefinSans-VariableFont_wght.ttf");
+  font-style: normal;
+}
 html {
   background-image: url(/assets/imgs/fond.jpg);
 }
 html body {
-  background-color: rgba(255, 255, 255, 0.9);
+  font-family: "Josefin", "sans-serif";
+  background-color: rgba(255, 255, 255, 0.85);
   margin: 0em 15em 0em 15em;
   display: flex;
   flex-direction: column;
   min-height: 99vh;
+}
+html body > header > .navigation {
+  margin-top: 0.5em;
 }
 html body > header > .navigation ul {
   list-style: none;
@@ -35,9 +49,51 @@ html body > header > .navigation ul > li:hover {
   color: rgb(255, 13, 215);
   cursor: pointer;
 }
+html body > main > .container {
+  padding: 0;
+}
 html body > main > .container > #home {
   display: block;
 }
 html body > main > .container > .resume, html body > main > .container > .projects {
   display: none;
+}
+html body > main > .container > .home > h1 {
+  font-size: 12.3em;
+  font-family: "Italiana", "sans-serif";
+}
+html body > main > .container > .home > #devImg > img {
+  width: 35%;
+  height: auto;
+}
+html body > main > .container > .home > p {
+  margin: 0.5em;
+  font-size: 20px;
+  text-align: justify;
+}
+html body > main > .container > .home > .cardsHome {
+  text-align: center;
+}
+html body > main > .container > .home > .cardsHome .card-home h2 {
+  display: flex;
+  position: absolute;
+  top: 18.5em;
+}
+html body > main > .container > .home > .cardsHome .card-home h2 > a {
+  text-decoration: none;
+  color: black;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 25px;
+}
+html body > main > .container > .home > .cardsHome .card-home img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 20em;
+  height: 20em;
+  border: solid 7px rgba(128, 128, 128, 0.3);
+  border-radius: 25px;
+}
+html body > main > .container > .home > .cardsHome .card-home {
+  border: solid 2px red;
 }/*# sourceMappingURL=style.css.map */

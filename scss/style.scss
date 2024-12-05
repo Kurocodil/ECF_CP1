@@ -9,24 +9,53 @@
 html{
     background-image: url(/assets/imgs/fond.jpg);
     body{
-        background-color: rgb(255, 255, 255,0.9);
+        font-family: t.$texte;
+        background-color: rgb(255, 255, 255,0.85);
         margin:0em 15em 0em 15em;
         display: flex;
         flex-direction: column;
         min-height: 99vh;
         >header{
             >.navigation{
+                margin-top:0.5em;
                 @include m.navigation_bar;
             }
         }
         >main{
             >.container{
+                padding:0;
                 // Affichage principal
                 >#home{
                     display:block;
                 }
                 >.resume, >.projects{
                     display:none;
+                }
+                >.home{
+                    >h1{
+                        font-size: 12.3em;
+                        font-family: t.$titre;
+                    }
+                    >#devImg{
+                        >img{
+                            width: 35%;
+                            height: auto;
+                        }
+                    }
+                    >p{
+                        margin:0.5em;
+                        font-size: 20px;
+                        text-align: justify;
+                    }
+                    >.cardsHome{
+                        text-align: center;
+                        .card-home{
+                            @include m.carteDesign;
+                        }
+                        .card-home{
+                            border:solid 2px red;
+                        }
+                    }
                 }
             }
         }
