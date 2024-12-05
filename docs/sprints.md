@@ -131,7 +131,7 @@
         <tr>
             <td>Mise a jour Prototype</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
     </tbody>
 </table>
@@ -155,27 +155,27 @@
         <tr>
             <td>Création du squelette HTML page d'accueil</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
         <tr>
             <td>Création du squelette HTML page réalisation</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
         <tr>
             <td>Création du squelette HTML page CV</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
         <tr>
             <td>Création du squelette HTML page contact</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
         <tr>
             <td>Création du squelette HTML page mentions</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
     </tbody>
 </table>
@@ -196,27 +196,17 @@
     </thead>
     <tbody>
         <tr>
-            <td>Mise en page de la page d'accueil</td>
+            <td>Mise en page navbar</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
         <tr>
-            <td>Mise en page de la page réalisation</td>
+            <td>affichage dynamique</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
         <tr>
-            <td>Mise en page de la page CV</td>
-            <td>Mathéo</td>
-            <td>Pas commencé</td>
-        </tr>
-        <tr>
-            <td>Mise en page de la page contact</td>
-            <td>Mathéo</td>
-            <td>Pas commencé</td>
-        </tr>
-        <tr>
-            <td>Mise en page de la page mentions</td>
+            <td>navigation indépendante vers dynamique</td>
             <td>Mathéo</td>
             <td>Pas commencé</td>
         </tr>
@@ -240,17 +230,68 @@
     </thead>
     <tbody>
         <tr>
-            <td>Réflexion Fonctionnaité JavaScript</td>
+            <td>Mise en page de toute les pages</td>
             <td>Mathéo</td>
             <td>Pas commencé</td>
         </tr>
         <tr>
-            <td>Pseudo-code Javascript</td>
+            <td>Mise en place du responsive</td>
             <td>Mathéo</td>
             <td>Pas commencé</td>
         </tr>
         <tr>
-            <td>Implémentation JavaScript</td>
+            <td>Mise en place des extends</td>
+            <td>Mathéo</td>
+            <td>Pas commencé</td>
+        </tr>
+    </tbody>
+</table>
+
+### **Ce qu'il s'est bien passé** :
+* 
+#### **Problème rencontrés** :
+* 
+
+# Samedi 7 Décembre
+## Sprint 8 (8h - 12h)
+#### **Ojectif du sprint** :
+
+<table>
+    <thead>
+        <th>A faire</th>
+        <th>Responsable</th>
+        <th>Etat</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Analyse / pseudo-code JS</td>
+            <td>Mathéo</td>
+            <td>Pas commencé</td>
+        </tr>
+        <tr>
+            <td>Fonctionnalité JS</td>
+            <td>Mathéo</td>
+            <td>Pas commencé</td>
+        </tr>
+    </tbody>
+</table>
+
+### **Ce qu'il s'est bien passé** :
+* 
+#### **Problème rencontrés** :
+* 
+## Sprint 9 (12h-17h)
+#### **Ojectif du sprint** :
+
+<table>
+    <thead>
+        <th>A faire</th>
+        <th>Responsable</th>
+        <th>Etat</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Animation du site</td>
             <td>Mathéo</td>
             <td>Pas commencé</td>
         </tr>

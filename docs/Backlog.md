@@ -74,7 +74,7 @@
         <tr>
             <td>Remplissage sprint</td>
             <td>Faible</td>
-            <td>En cours</td>
+            <td>Fait</td>
             <td>2</td>
             <td>Mathéo</td>
         </tr>
@@ -88,99 +88,141 @@
         <tr>
             <td>Mise a jour Prototype</td>
             <td>Elevé</td>
-            <td>En cours</td>
+            <td>Fait</td>
             <td>4</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Création du squelette HTML page d'accueil</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>5</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Création du squelette HTML page réalisation</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>5</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Création du squelette HTML page CV</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>5</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Création du squelette HTML page contact</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>5</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Création du squelette HTML page mentions</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>5</td>
+            <td>Mathéo</td>
+        </tr>
+        <tr>
+            <td>Mise en page navbar</td>
+            <td>Elevé</td>
+            <td>Fait</td>
+            <td>6</td>
+            <td>Mathéo</td>
+        </tr>
+        <tr>
+            <td>Affichage dynamique</td>
+            <td>Elevé</td>
+            <td>Fait</td>
+            <td>6</td>
+            <td>Mathéo</td>
+        </tr>
+        <tr>
+            <td>Navigation indépendante -> dynamique</td>
+            <td>Elevé</td>
+            <td>Pas commencé</td>
+            <td>6</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Mise en page de la page d'accueil</td>
             <td>Elevé</td>
             <td>Pas commencé</td>
-            <td>6</td>
+            <td>7</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Mise en page de la page réalisation</td>
             <td>Elevé</td>
             <td>Pas commencé</td>
-            <td>6</td>
+            <td>7</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Mise en page de la page cv</td>
             <td>Elevé</td>
             <td>Pas commencé</td>
-            <td>6</td>
+            <td>7</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Mise en page de la page contact</td>
             <td>Elevé</td>
             <td>Pas commencé</td>
-            <td>6</td>
+            <td>7</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Mise en page de la page mentions</td>
             <td>Elevé</td>
             <td>Pas commencé</td>
-            <td>6</td>
+            <td>7</td>
+            <td>Mathéo</td>
+        </tr>
+        <tr>
+            <td>Mise en place Responsive</td>
+            <td>Elevé</td>
+            <td>Pas commencé</td>
+            <td>7</td>
+            <td>Mathéo</td>
+        </tr>
+        <tr>
+            <td>Mise en place Extends</td>
+            <td>Elevé</td>
+            <td>Pas commencé</td>
+            <td>7</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Réflexion fonctionnalité JavaScript</td>
             <td>Elevé</td>
             <td>Pas commencé</td>
-            <td>7</td>
+            <td>8</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Pseudo-code JavaScript</td>
             <td>Elevé</td>
             <td>Pas commencé</td>
-            <td>7</td>
+            <td>8</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Implémentation JavaScript</td>
             <td>Elevé</td>
             <td>Pas commencé</td>
-            <td>7</td>
+            <td>8</td>
+            <td>Mathéo</td>
+        </tr>
+        <tr>
+            <td>Animation</td>
+            <td>Moyen</td>
+            <td>Pas commencé</td>
+            <td>9</td>
             <td>Mathéo</td>
         </tr>
     </tbody>
