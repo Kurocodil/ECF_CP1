@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Portfolio</title>
 
     <!-- Implémentation du CSS -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -32,24 +32,21 @@
         <div class="container">
             <div class="home page" id="home">
                 <h1>MATHEO SIRON</h1>
-                <div>
-                    <div>
-                        <img src="assets/imgs/devbande.gif" alt="Bandeau Développeur Web">
-                    </div>
-                    <p>
-                        Je m’appelle Mathéo Siron, je suis passionné depuis plusieurs années par le développement web, 
-                        et aujourd’hui je suis apprenti développeur en Full-stack. J’ai à l’heure actuelle, beaucoup 
-                        plus d’appétence pour la partie Front-end de la création de site, mais n’en reste pas moins curieux, 
-                        et motivé par le côté Back-end de la programmation. Je préfère dans le front des designs assez coloré 
-                        mais assez sobre.
-                    </p>
+                <div id="devImg">
+                    <img src="assets/imgs/bande_dev.png" alt="Bandeau Développeur Web">
                 </div>
-                <div class="row cartes">
-                    <div class="card-home col-lg"> <!-- Gérer la taille de la carte -->
+                <p>
+                    Passionné depuis plusieurs années par le développement web, 
+                    je me suis orienté vers une formation de DWWM et suis ainsi devenu apprenti développeur en Full-stack. J’ai à l’heure actuelle, bien 
+                    plus d’appétence pour la partie Front-end de la création de site, mais n’en reste pas moins curieux, 
+                    et motivé par le côté Back-end de la programmation. En terme de design j'aime ce qui est coloré, tout en restant sobre.
+                </p>
+                <div class="row cardsHome">
+                    <div class="card-home col-lg">
                         <h2><a href="">CV</a></h2> <!-- Mettre en position absolue comme pour Shoesplash -->
-                        <img src="assets/imgs/fondCV.jpg" alt="CV" width="200px"/>
+                        <img src="assets/imgs/fondCV.jpg" alt="CV"/>
                     </div>
-                    <div class="card-home colg-lg"> <!-- Gérer la taille de la carte -->
+                    <div class="card-home col-lg"> <!-- Gérer la taille de la carte -->
                         <h2><a href="">PROJETS</a></h2> <!-- Mettre en position absolue comme pour Shoesplash -->
                         <img src="assets/imgs/fondProjet.jpg" alt="Projet" width="200px"/>
                     </div>
@@ -59,7 +56,7 @@
             <!-- Page CV -->
             <div class="resume page" id="resume">
                 <img src="assets/imgs/CV_matheo_siron_dwwm.pdf" alt="CV">
-                <a href="assets/imgs/CV_matheo_siron_dwwm.pdf">Téléchargez le CV</a>
+                <a href="assets/imgs/CV_matheo_siron_dwwm.pdf" target="_blank">Téléchargez le CV</a>
             </div>
             <!-- Page Projets -->
             <div class="projects page" id="projects">
