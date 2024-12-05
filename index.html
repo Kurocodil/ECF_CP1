@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
+    <title>Accueil</title>
 
     <!-- Implémentation du CSS -->
     <link rel="stylesheet" href="css/normalize.css">
@@ -18,7 +18,7 @@
     <header>
         <div class="navigation">
             <ul>
-                <li class="navBtn" data-target="home">Accueil</li>
+                <li class="navBtn" data-target="home">ACCUEIL</li>
                 <li class="navBtn" data-target="resume">CV</li>
                 <li class="navBtn" data-target="projects">PROJETS</li>
                 <li class="navBtn" data-target="mention">MENTIONS</li>
@@ -29,7 +29,7 @@
 
     <main>
         <!-- Page Accueil -->
-        <div class="container pages" id="home">
+        <div class="container-fluid pages" id="home">
             <section class="Accueil-top">
                 <header>
                     <h1>MATHEO SIRON</h1>
@@ -47,21 +47,22 @@
             </section>
 
             <div class="row cartes">
-                <section class="card-accueil col-lg"> <!-- Gérer la taille de la carte -->
+                <div class="card-accueil col-lg"> <!-- Gérer la taille de la carte -->
                     <h2><a href="">CV</a></h2> <!-- Mettre en position absolue comme pour Shoesplash -->
                     <img src="assets/imgs/fondCV.jpg" alt="CV" width="200px"/>
-                </section>
-                <section class="card-accueil colg-lg"> <!-- Gérer la taille de la carte -->
+                </div>
+
+                <div class="card-accueil colg-lg"> <!-- Gérer la taille de la carte -->
                     <h2><a href="">PROJETS</a></h2> <!-- Mettre en position absolue comme pour Shoesplash -->
                     <img src="assets/imgs/fondProjet.jpg" alt="Projet" width="200px"/>
-                </section>
+                </div>
             </div>
         </div>
 
         <!-- Page CV -->
         <div class="container pages" id="resume">
-            
-
+            <img src="assets/imgs/CV_matheo_siron_dwwm.pdf" alt="CV">
+            <a href="assets/imgs/CV_matheo_siron_dwwm.pdf">Téléchargez le CV</a>
         </div>
 
         <!-- Page Projets -->
@@ -76,12 +77,12 @@
                     <!-- Cartes Projets -->
                     <div class="row">
                         <!-- Carte 1 -->
-                        <section class="carte col-lg">
+                        <section class="carte col-lg" data-titre="AC/DC">
                             <header>
-                                <h4>Titre</h4>
+                                <h4>AC/DC</h4>
                             </header>
                             <article>
-                                <img src="" alt="img1">
+                                <img src="assets/imgs/acdc.PNG" alt="AC/DC" width="200px">
                             </article>
                             <footer>
                                 Description
@@ -89,12 +90,12 @@
                         </section>
 
                         <!-- Carte 2 -->
-                        <section class="carte col-lg">
+                        <section class="carte col-lg" data-titre="L'antre du livre">
                             <header>
-                                <h4>Titre</h4>
+                                <h4>L'antre du livre</h4>
                             </header>
                             <article>
-                                <img src="" alt="img1">
+                                <img src="assets/imgs/antre_du_livre.PNG" alt="L'antre" width="200px">
                             </article>
                             <footer>
                                 Description
@@ -102,12 +103,12 @@
                         </section>
 
                         <!-- Carte 3 -->
-                        <section class="carte col-lg">
+                        <section class="carte col-lg" data-titre="Artistes Peintres">
                             <header>
-                                <h4>Titre</h4>
+                                <h4>Artistes Peintres</h4>
                             </header>
                             <article>
-                                <img src="" alt="img1">
+                                <img src="assets/imgs/artistes_peintres.PNG" alt="Artistes Peintres" width="200px">
                             </article>
                             <footer>
                                 Description
@@ -115,12 +116,12 @@
                         </section>
 
                         <!-- Carte 4 -->
-                        <section class="carte col-lg">
+                        <section class="carte col-lg" data-titre="Choco Boom">
                             <header>
-                                <h4>Titre</h4>
+                                <h4>Choco Boom</h4>
                             </header>
                             <article>
-                                <img src="" alt="img1">
+                                <img src="assets/imgs/chocoboom.PNG" alt="Choco Boom" width="200px">
                             </article>
                             <footer>
                                 Description
@@ -128,12 +129,12 @@
                         </section>
 
                         <!-- Carte 5 -->
-                        <section class="carte col-lg">
+                        <section class="carte col-lg" data-titre="Galerie d'animaux">
                             <header>
-                                <h4>Titre</h4>
+                                <h4>Galerie d'animaux</h4>
                             </header>
                             <article>
-                                <img src="" alt="img1">
+                                <img src="assets/imgs/galerie_animaux.PNG" alt="Galerie" width="200px">
                             </article>
                             <footer>
                                 Description
@@ -141,12 +142,12 @@
                         </section>
 
                         <!-- Carte 6 -->
-                        <section class="carte col-lg">
+                        <section class="carte col-lg" data-titre="History Game">
                             <header>
-                                <h4>Titre</h4>
+                                <h4>History Game</h4>
                             </header>
                             <article>
-                                <img src="" alt="img1">
+                                <img src="assets/imgs/history_game.PNG" alt="History Game" width="200px">
                             </article>
                             <footer>
                                 Description
@@ -154,12 +155,12 @@
                         </section>
 
                         <!-- Carte 7 -->
-                        <section class="carte col-lg">
+                        <section class="carte col-lg" data-titre="Shoesplash">
                             <header>
-                                <h4>Titre</h4>
+                                <h4>Shoesplash</h4>
                             </header>
                             <article>
-                                <img src="" alt="img1">
+                                <img src="assets/imgs/shoes_plash.PNG" alt="Shoesplash" width="200px">
                             </article>
                             <footer>
                                 Description
@@ -173,7 +174,6 @@
     </main>
 
     <!-- Implémentation du JavaScript  -->
-    <script src="js/frameworks/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
