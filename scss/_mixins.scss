@@ -1,3 +1,6 @@
+@use "sass:map";
+@use '_colors.scss'  as c;
+
 @mixin navigation_bar{
     ul{
         list-style: none;
@@ -28,18 +31,21 @@
     }
 }
 
-@mixin carteDesign{
-    h2{
-        display: flex;
-        position: absolute;
-        top:18.5em;
-        // flex-direction: column;
-        >a{
-            text-decoration: none;
-            color:black;
-            background-color: rgb(128, 128, 128,0.5);
-            padding:0.5em 1em 0.5em 1em;
-            border-radius:25px;
+@mixin carteHome{
+    button{
+        border:none;
+        background-color: transparent;
+        div{
+            display:flex;
+            justify-content: center;
+            h2{
+                position: absolute;
+                top:22.5em;
+                background-color: rgb(128, 128, 128,0.8);
+                background-image: linear-gradient(45deg,map-get(c.$colors,rose),map-get(c.$colors,bleuClair));
+                padding:0.5em 1em 0.5em 1em;
+                border-radius:25px;
+            }
         }
     }
     img{
@@ -48,5 +54,33 @@
         height: 20em;
         border:solid 7px rgb(128, 128, 128, 0.3);
         border-radius:25px;
+    }
+}
+
+@mixin cardPro{
+    background-color: white;
+    border-radius:12px;
+    box-shadow: 10px 10px 5px rgb(173, 173, 173);
+    padding-top:0.5em;
+    margin:0.5em;
+    width: 25em;
+    height: 30em;
+    img{
+        padding:0;
+    }
+    footer{
+        padding:0.5em;
+    }
+    >header{
+        >h4{
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+    >article{
+        >img{
+            width: 100%;
+            height: auto;
+        }
     }
 }
