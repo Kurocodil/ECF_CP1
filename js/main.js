@@ -15,3 +15,19 @@ btns.forEach(data =>{                             // Boucle pour chaque bouton
         });
     });
 });
+
+// Filtre projets
+function filterbar(){
+    const Filtre = document.getElementById("filter").value.toLowerCase();
+    const Tab = document.querySelectorAll('.card-pro');
+
+    Tab.forEach(data =>{
+        const titre = data.getAttribute("data-titre").toLowerCase();
+
+        if (titre.includes(Filtre)){
+            data.style.display='block';
+        } else{
+            data.style.display='none';
+        }
+    })
+}
