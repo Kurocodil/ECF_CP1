@@ -14,7 +14,7 @@ html{
         margin:0em 15em 0em 15em;
         display: flex;
         flex-direction: column;
-        min-height: 99vh;
+        min-height: 100vh;
         >header{
             >.navigation{
                 margin-top:0.5em;
@@ -25,16 +25,19 @@ html{
             >.container{
                 padding:0;
                 // Affichage principal
-                >#home{
+                >.projects{
                     display:block;
                 }
-                >.resume, >.projects{
+                >.resume, >#home{
                     display:none;
                 }
+                // Mise en page Accueil
                 >.home{
-                    >h1{
-                        font-size: 12.3em;
-                        font-family: t.$titre;
+                    >div{
+                        >h1{
+                            font-size: 12.3em;
+                            font-family: t.$titre;
+                        }
                     }
                     >#devImg{
                         >img{
@@ -42,22 +45,45 @@ html{
                             height: auto;
                         }
                     }
+                    // texte
                     >p{
                         margin:0.5em;
-                        font-size: 20px;
+                        margin-top:2em;
+                        margin-bottom:2em;
+                        font-size: 22px;
                         text-align: justify;
                     }
+                    // Carte d'accueil
                     >.cardsHome{
                         text-align: center;
                         .card-home{
-                            @include m.carteDesign;
-                        }
-                        .card-home{
-                            border:solid 2px red;
+                            @include m.carteHome;
                         }
                     }
                 }
             }
+            // Mise ne page projet
+            .projects{
+                h1{
+                    text-align: center;
+                    font-size: 9em;
+                }
+                #filterbar{
+                    text-align: center;
+                    margin-bottom:1em;
+                    >input{
+                        border-radius: 12px;
+                        padding:5px;
+                        width: 20em;
+                    }
+                }
+                .card-pro{
+                    @include m.cardPro;
+                }
+            }
+        }
+        footer{
+            margin-top:auto;
         }
     }
 }

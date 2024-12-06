@@ -28,10 +28,12 @@
     </header>
 
     <main>
-        <!-- Page Accueil -->
         <div class="container">
+            <!-- Page Accueil -->
             <div class="home page" id="home">
-                <h1>MATHEO SIRON</h1>
+                <div class="row">
+                    <h1 class="col-lg col-md-4">MATHEO SIRON</h1>
+                </div>
                 <div id="devImg">
                     <img src="assets/imgs/bande_dev.png" alt="Bandeau Développeur Web">
                 </div>
@@ -43,12 +45,20 @@
                 </p>
                 <div class="row cardsHome">
                     <div class="card-home col-lg">
-                        <h2><a href="">CV</a></h2> <!-- Mettre en position absolue comme pour Shoesplash -->
-                        <img src="assets/imgs/fondCV.jpg" alt="CV"/>
+                        <button class="dyna" data-target="resume">
+                            <div>
+                                <h2>CV</h2>
+                            </div>
+                            <img src="assets/imgs/fondCV.jpg" alt="CV"/>    
+                        </button>
                     </div>
-                    <div class="card-home col-lg"> <!-- Gérer la taille de la carte -->
-                        <h2><a href="">PROJETS</a></h2> <!-- Mettre en position absolue comme pour Shoesplash -->
-                        <img src="assets/imgs/fondProjet.jpg" alt="Projet" width="200px"/>
+                    <div class="card-home col-lg">
+                        <button class="dyna" data-target="projects">
+                            <div>
+                                <h2>PROJETS</h2>
+                            </div>
+                            <img src="assets/imgs/fondProjet.jpg" alt="Projet"/>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -65,101 +75,170 @@
                         <h1>Projets</h1>
                     </header>
                     <article>
-                        <input type="text" id="filtre" placeholder="Nom du projet">
+                        <div id="filterbar">
+                            <input type="text" id="filtre" placeholder="Nom du projet">
+                        </div>
     
                         <!-- Cartes Projets -->
                         <div class="row">
                             <!-- Carte 1 -->
-                            <section class="carte col-lg" data-titre="AC/DC">
-                                <header>
-                                    <h4>AC/DC</h4>
-                                </header>
-                                <article>
-                                    <img src="assets/imgs/acdc.PNG" alt="AC/DC" width="200px">
-                                </article>
-                                <footer>
-                                    Description
-                                </footer>
-                            </section>
+                             <div class="col-lg">
+                                 <section class="card-pro" data-titre="AC/DC">
+                                     <header>
+                                         <h4>AC/DC</h4>
+                                     </header>
+                                     <article>
+                                         <img src="assets/imgs/acdc.PNG" alt="AC/DC" width="200px">
+                                     </article>
+                                     <footer>
+                                        <p>
+                                            Site vitrine créé dans le cadre d'un exercice sur le framework <strong>Bootstrap</strong>
+                                            présentant le groupe d'AC/DC, les membres du groupe, les albums ainsi que les dates de concert.
+                                        </p>
+                                         <u>technologies utilisées :</u>
+                                         <p>
+                                             HTML / SCSS / CSS / BootStrap / FontAwesome
+                                         </p>
+                                     </footer>
+                                 </section>
+                             </div>
     
                             <!-- Carte 2 -->
-                            <section class="carte col-lg" data-titre="L'antre du livre">
-                                <header>
-                                    <h4>L'antre du livre</h4>
-                                </header>
-                                <article>
-                                    <img src="assets/imgs/antre_du_livre.PNG" alt="L'antre" width="200px">
-                                </article>
-                                <footer>
-                                    Description
-                                </footer>
-                            </section>
+                             <div class="col-lg">
+                                 <section class="card-pro" data-titre="L'antre du livre">
+                                     <header>
+                                         <h4>L'antre du livre</h4>
+                                     </header>
+                                     <article>
+                                         <img src="assets/imgs/antre_du_livre.PNG" alt="L'antre">
+                                     </article>
+                                     <footer>
+                                        <p>
+                                            Site vitrine créé dans le cadre d'une préparation d'ECF CP1. 
+                                            C'est un site répertoriant des livres en ajoutant dans la pages de la liste,
+                                             une fonction <strong>JavaScript</strong> permettant de chercher un livre via des informations données.
+                                        </p>
+                                         <u>technologies utilisées :</u>
+                                         <p>
+                                             HTML / SCSS / CSS / BootStrap / JavaScript / FontAwesome
+                                         </p>
+                                     </footer>
+                                 </section>
+                             </div>
     
                             <!-- Carte 3 -->
-                            <section class="carte col-lg" data-titre="Artistes Peintres">
-                                <header>
-                                    <h4>Artistes Peintres</h4>
-                                </header>
-                                <article>
-                                    <img src="assets/imgs/artistes_peintres.PNG" alt="Artistes Peintres" width="200px">
-                                </article>
-                                <footer>
-                                    Description
-                                </footer>
-                            </section>
-    
+                             <div class="col-lg">
+                                 <section class="card-pro" data-titre="Artistes Peintres">
+                                     <header>
+                                         <h4>Artistes Peintres</h4>
+                                     </header>
+                                     <article>
+                                         <img src="assets/imgs/artistes_peintres.PNG" alt="Artistes Peintres">
+                                     </article>
+                                     <footer>
+                                        <p>
+                                            Site vitrine créé dans le cadre d'un exercice sur le chargement dynamique. 
+                                            C'est un site présentant des tableaux de différents peintres connu.
+                                            Une fonction <strong>JavaScript</strong> de charger dynamiquement des pages.
+                                        </p>
+                                         <u>technologies utilisées :</u>
+                                         <p>
+                                             HTML / SCSS / CSS / BootStrap / JavaScript / FontAwesome
+                                         </p>
+                                     </footer>
+                                 </section>
+                             </div>
+                        </div>
+                        <div class="row">
                             <!-- Carte 4 -->
-                            <section class="carte col-lg" data-titre="Choco Boom">
-                                <header>
-                                    <h4>Choco Boom</h4>
-                                </header>
-                                <article>
-                                    <img src="assets/imgs/chocoboom.PNG" alt="Choco Boom" width="200px">
-                                </article>
-                                <footer>
-                                    Description
-                                </footer>
-                            </section>
+                             <div class="col-lg">
+                                 <section class="card-pro" data-titre="Choco Boom">
+                                     <header>
+                                         <h4>Choco Boom</h4>
+                                     </header>
+                                     <article>
+                                         <img src="assets/imgs/chocoboom.PNG" alt="Choco Boom">
+                                     </article>
+                                     <footer>
+                                        <p>
+                                            Site de présentation d'une marque de chocolat créer dans le but de voir le responsive.
+                                        </p>
+                                         <u>technologies utilisées :</u>
+                                         <p>
+                                             HTML / CSS
+                                         </p>
+                                     </footer>
+                                 </section>
+                             </div>
     
                             <!-- Carte 5 -->
-                            <section class="carte col-lg" data-titre="Galerie d'animaux">
-                                <header>
-                                    <h4>Galerie d'animaux</h4>
-                                </header>
-                                <article>
-                                    <img src="assets/imgs/galerie_animaux.PNG" alt="Galerie" width="200px">
-                                </article>
-                                <footer>
-                                    Description
-                                </footer>
-                            </section>
+                             <div class="col-lg">          
+                                 <section class="card-pro" data-titre="Galerie d'animaux">
+                                     <header>
+                                         <h4>Galerie d'animaux</h4>
+                                     </header>
+                                     <article>
+                                         <img src="assets/imgs/galerie_animaux.PNG" alt="Galerie">
+                                     </article>
+                                     <footer>
+                                        <p>
+                                            Site galerie avec une petite carte de différents animaux créer dans le but de voir quelques petites animationd d'
+                                            <strong>hover</strong> et de rangement de tableau.
+                                        </p>
+                                         <u>technologies utilisées :</u>
+                                         <p>
+                                             HTML / CSS
+                                         </p>
+                                     </footer>
+                                 </section>
+                             </div>
     
                             <!-- Carte 6 -->
-                            <section class="carte col-lg" data-titre="History Game">
-                                <header>
-                                    <h4>History Game</h4>
-                                </header>
-                                <article>
-                                    <img src="assets/imgs/history_game.PNG" alt="History Game" width="200px">
-                                </article>
-                                <footer>
-                                    Description
-                                </footer>
-                            </section>
-    
-                            <!-- Carte 7 -->
-                            <section class="carte col-lg" data-titre="Shoesplash">
-                                <header>
-                                    <h4>Shoesplash</h4>
-                                </header>
-                                <article>
-                                    <img src="assets/imgs/shoes_plash.PNG" alt="Shoesplash" width="200px">
-                                </article>
-                                <footer>
-                                    Description
-                                </footer>
-                            </section>
+                             <div class="col-lg">
+                                 <section class="card-pro" data-titre="History Game">
+                                     <header>
+                                         <h4>History Game</h4>
+                                     </header>
+                                     <article>
+                                         <img src="assets/imgs/history_game.PNG" alt="History Game">
+                                     </article>
+                                     <footer>
+                                        <p>
+                                            Site vitrine sur l'histoire du jeux vidéo. 
+                                            C'est un site expliquant et répertoriant des jeux retro créer dans le but d'exercer <strong>BootStrap</strong>.
+                                        </p>
+                                         <u>technologies utilisées :</u>
+                                         <p>
+                                             HTML / CSS / BootStrap
+                                         </p>
+                                     </footer>
+                                 </section>
+                             </div>
                         </div>
+                        <div class="row">
+                            <!-- Carte 7 -->
+                             <div class="col-lg">
+                                 <section class="card-pro" data-titre="Shoesplash">
+                                     <header>
+                                         <h4>Shoesplash</h4>
+                                     </header>
+                                     <article>
+                                         <img src="assets/imgs/shoes_plash.PNG" alt="Shoesplash">
+                                     </article>
+                                     <footer>
+                                        <p>
+                                            Site de vente de chaussure créer dans le but de découvrir les différents positionnement <strong>CSS</strong>.
+                                        </p>
+                                         <u>technologies utilisées :</u>
+                                         <p>
+                                             HTML / CSS / FontAwesome
+                                         </p>
+                                     </footer>
+                                 </section>
+                             </div>
+                            <div class="col-lg"></div>
+                            <div class="col-lg"></div>
+                        </div>  
                     </article>
                 </section>
             </div>
@@ -170,6 +249,8 @@
 
     </main>
 
+    <footer>
+    </footer>
     <!-- Implémentation du JavaScript  -->
     <script src="js/main.js"></script>
 </body>
