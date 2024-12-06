@@ -10,6 +10,9 @@
 }
 html {
   background-image: url(/assets/imgs/fond.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: none;
 }
 html body {
   font-family: "Josefin", "sans-serif";
@@ -52,10 +55,10 @@ html body > header > .navigation ul > li:hover {
 html body > main > .container {
   padding: 0;
 }
-html body > main > .container > .projects {
+html body > main > .container > .resume {
   display: block;
 }
-html body > main > .container > .resume, html body > main > .container > #home {
+html body > main > .container > .projects, html body > main > .container > #home {
   display: none;
 }
 html body > main > .container > .home > div > h1 {
@@ -135,6 +138,22 @@ html body > main .projects .card-pro > header > h4 {
 html body > main .projects .card-pro > article > img {
   width: 100%;
   height: auto;
+}
+html body > main .resume {
+  margin-top: 2em;
+}
+html body > main .resume h1 {
+  text-align: center;
+  font-size: 9em;
+}
+html body > main .resume .cv {
+  display: flex;
+  flex-direction: column;
+}
+html body > main .resume p {
+  line-height: 1.5em;
+  text-align: justify;
+  font-size: 1.4em;
 }
 html body footer {
   margin-top: auto;
