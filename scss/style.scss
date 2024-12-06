@@ -8,6 +8,9 @@
 
 html{
     background-image: url(/assets/imgs/fond.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: none;
     body{
         font-family: t.$texte;
         background-color: rgb(255, 255, 255,0.85);
@@ -25,10 +28,10 @@ html{
             >.container{
                 padding:0;
                 // Affichage principal
-                >.projects{
+                >.resume{
                     display:block;
                 }
-                >.resume, >#home{
+                >.projects, >#home{
                     display:none;
                 }
                 // Mise en page Accueil
@@ -79,6 +82,23 @@ html{
                 }
                 .card-pro{
                     @include m.cardPro;
+                }
+            }
+            // Mise en page CV
+            .resume{
+                h1{
+                    text-align: center;
+                    font-size: 9em;
+                }
+                margin-top:2em;
+                .cv{
+                    display:flex;
+                    flex-direction: column;
+                }
+                p{
+                    line-height: 1.5em;
+                    text-align: justify;
+                    font-size: 1.4em;
                 }
             }
         }
