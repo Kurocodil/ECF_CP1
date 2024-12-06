@@ -52,13 +52,16 @@ html body > header > .navigation ul > li:hover {
   color: rgb(255, 13, 215);
   cursor: pointer;
 }
+html body > main {
+  padding-top: 1em;
+}
 html body > main > .container {
   padding: 0;
 }
-html body > main > .container > .resume {
+html body > main > .container > #home {
   display: block;
 }
-html body > main > .container > .projects, html body > main > .container > #home {
+html body > main > .container > .projects, html body > main > .container > #resume {
   display: none;
 }
 html body > main > .container > .home > div > h1 {
@@ -154,6 +157,38 @@ html body > main .resume p {
   line-height: 1.5em;
   text-align: justify;
   font-size: 1.4em;
+}
+html body > main > .mentions > p {
+  text-align: center;
+}
+html body > main > .mentions .card-mentions {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 10px 10px 5px rgb(173, 173, 173);
+  padding-top: 0.5em;
+  margin: 0.5em;
+  width: 25em;
+  height: 30em;
+  height: auto;
+  padding: 1em;
+}
+html body > main > .mentions .card-mentions img {
+  padding: 0;
+}
+html body > main > .mentions .card-mentions footer {
+  padding: 0.5em;
+}
+html body > main > .mentions .card-mentions > header > h4 {
+  text-align: center;
+  font-size: 30px;
+}
+html body > main > .mentions .card-mentions > article > img {
+  width: 100%;
+  height: auto;
+}
+html body > main > .mentions h1 {
+  text-align: center;
+  font-size: 9em;
 }
 html body footer {
   margin-top: auto;
