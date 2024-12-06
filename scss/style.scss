@@ -25,13 +25,14 @@ html{
             }
         }
         >main{
+            padding-top:1em;
             >.container{
                 padding:0;
                 // Affichage principal
-                >.resume{
+                >#home{
                     display:block;
                 }
-                >.projects, >#home{
+                >.projects, >#resume{
                     display:none;
                 }
                 // Mise en page Accueil
@@ -101,9 +102,25 @@ html{
                     font-size: 1.4em;
                 }
             }
+            // Mise en page Mentions Légales
+            >.mentions{
+                >p{
+                    text-align: center;
+                }
+                .card-mentions{
+                    @include m.cardPro;
+                    height: auto;
+                    padding:1em;
+                } 
+                h1{
+                    text-align: center;
+                    font-size: 9em;
+                }     
+            }
         }
         footer{
             margin-top:auto;
         }
     }
 }
+
