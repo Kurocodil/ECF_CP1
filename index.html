@@ -17,13 +17,15 @@
     <!-- Header Body -->
     <header>
         <div class="navigation">
-            <ul>
-                <li class="navBtn dyna" data-target="home">ACCUEIL</li>
-                <li class="navBtn dyna" data-target="resume">CV</li>
-                <li class="navBtn dyna" data-target="projects">PROJETS</li>
-                <li class="navBtn"><a href="/includes/mentions.html">MENTIONS</a></li>
-                <li class="navBtn"><a href="/includes/contact.html">CONTACT</a></li>
-            </ul>
+            <nav>
+                <ul>
+                  <li><a href="index.html?page=home">Accueil</a></li>
+                  <li><a href="index.html?page=resume">CV</a></li>
+                  <li><a href="index.html?page=projects">Projets</a></li>
+                  <li><a href="/includes/contact.html">Contact</a></li>
+                  <li><a href="/includes/mentions.html">Mentions Légales</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
@@ -45,19 +47,23 @@
                 </p>
                 <div class="row cardsHome">
                     <div class="card-home col-lg">
-                        <button class="dyna" data-target="resume">
-                            <div>
-                                <h2>CV</h2>
-                            </div>
-                            <img src="assets/imgs/fondCV.jpg" alt="CV"/>    
+                        <button >
+                            <a href="index.html?page=resume">
+                                <div>
+                                    <h2>CV</h2>
+                                </div>
+                                <img src="assets/imgs/fondCV.jpg" alt="CV"/>    
+                            </a>
                         </button>
                     </div>
                     <div class="card-home col-lg">
                         <button class="dyna" data-target="projects">
-                            <div>
-                                <h2>PROJETS</h2>
-                            </div>
-                            <img src="assets/imgs/fondProjet.jpg" alt="Projet"/>
+                            <a href="index.html?page=projects">
+                                <div>
+                                    <h2>PROJETS</h2>
+                                </div>
+                                <img src="assets/imgs/fondProjet.jpg" alt="Projet"/>
+                            </a>
                         </button>
                     </div>
                 </div>
@@ -271,9 +277,6 @@
             </div>
             
         </div>
-
-
-
     </main>
 
     <footer>
