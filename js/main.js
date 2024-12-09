@@ -27,27 +27,8 @@ function navFunction() {
                     plus d’appétence pour la partie <strong>Front-end</strong> de la création de site, mais n’en reste pas moins curieux, 
                     et motivé par le côté Back-end de la programmation. En terme de design j'aime ce qui est coloré, tout en restant sobre.
                 </p>
-                <div class="row cardsHome">
-                    <div class="card-home col-lg-6">
-                        <button >
-                            <a href="#resume">
-                                <div>
-                                    <h2>CV</h2>
-                                </div>
-                                <img src="assets/imgs/fondCV.jpg" alt="CV"/>    
-                            </a>
-                        </button>
-                    </div>
-                    <div class="card-home col-lg-6">
-                        <button class="dyna" data-target="projects">
-                            <a href="#projects">
-                                <div>
-                                    <h2>PROJETS</h2>
-                                </div>
-                                <img src="assets/imgs/fondProjet.jpg" alt="Projet"/>
-                            </a>
-                        </button>
-                    </div>
+                <div class="gitProfilePicture fade-up">
+                    <img src="../assets/imgs/PPGithub.jpg" alt="GitHub Profile Picture">
                 </div>
             </div>`
             break;  
@@ -271,38 +252,19 @@ function navFunction() {
         default:                                                                    // Affichage Page Home si page introuvable
             home.innerHTML=`<div class="home page">
                 <div class="row">
-                    <h1 class="col-lg ">MATHEO SIRON</h1>
+                    <h1 class="col-lg fade-down">MATHEO SIRON</h1>
                 </div>
-                <div id="devImg">
+                <div id="devImg" class="fade-far-left">
                     <img src="assets/imgs/bande_dev.png" alt="Bandeau Développeur Web">
                 </div>
-                <p>
+                <p class="Spawn">
                     Passionné depuis plusieurs années par le développement web, 
-                    je me suis orienté vers une formation de DWWM et suis ainsi devenu apprenti développeur en Full-stack. J’ai à l’heure actuelle, bien 
-                    plus d’appétence pour la partie Front-end de la création de site, mais n’en reste pas moins curieux, 
+                    je me suis orienté vers une formation de <strong>DWWM</strong> et suis ainsi devenu apprenti développeur en <strong>Full-stack</strong>. J’ai à l’heure actuelle, bien 
+                    plus d’appétence pour la partie <strong>Front-end</strong> de la création de site, mais n’en reste pas moins curieux, 
                     et motivé par le côté Back-end de la programmation. En terme de design j'aime ce qui est coloré, tout en restant sobre.
                 </p>
-                <div class="row cardsHome">
-                    <div class="card-home col-lg">
-                        <button >
-                            <a href="index.html?page=resume">
-                                <div>
-                                    <h2>CV</h2>
-                                </div>
-                                <img src="assets/imgs/fondCV.jpg" alt="CV"/>    
-                            </a>
-                        </button>
-                    </div>
-                    <div class="card-home col-lg">
-                        <button class="dyna" data-target="projects">
-                            <a href="index.html?page=projects">
-                                <div>
-                                    <h2>PROJETS</h2>
-                                </div>
-                                <img src="assets/imgs/fondProjet.jpg" alt="Projet"/>
-                            </a>
-                        </button>
-                    </div>
+                <div class="gitProfilePicture fade-up">
+                    <img src="../assets/imgs/PPGithub.jpg" alt="GitHub Profile Picture">
                 </div>
             </div>`
             break;

@@ -87,7 +87,7 @@
   }
 }
 .Spawn {
-  animation: Spawn 2s ease-in-out;
+  animation: Spawn 1.5s ease-in-out;
 }
 
 @keyframes flashing {
@@ -184,16 +184,12 @@ html body > main .projects #filterbar > input, html body > main .projects .card-
   border-radius: 12px;
 }
 
-html body > main > .container > #home .cardsHome .card-home button div h2, html body > main > .container > #home .cardsHome .card-home img {
-  border-radius: 25px;
-}
-
 html body, html body > main .resume .cv {
   display: flex;
   flex-direction: column;
 }
 
-html body > main > .container > #home .cardsHome, html body > main .projects h1, html body > main .projects #filterbar, html body > main .projects .card-pro > header > h4, html body > main .resume h1, html body > main > .mentions > p, html body > main > .mentions .card-mentions > header > h4, html body > main > .mentions h1, html body > main #formulaire, html body > main #formulaire h1, html body > main #formulaire input, html body > main #formulaire textarea {
+html body > main > .container > #home div h1, html body > main > .container > #home .gitProfilePicture, html body > main .projects h1, html body > main .projects #filterbar, html body > main .projects .card-pro > header > h4, html body > main .resume h1, html body > main > .mentions > p, html body > main > .mentions .card-mentions > header > h4, html body > main > .mentions h1, html body > main #formulaire, html body > main #formulaire h1, html body > main #formulaire input, html body > main #formulaire textarea, html body footer {
   text-align: center;
 }
 
@@ -202,7 +198,7 @@ html body > header > .navigation ul, html body > header > .navigation ul > li, h
   list-style: none;
 }
 
-html body > header > .navigation ul, html body > main > .container > #home .cardsHome .card-home button div {
+html body > header > .navigation ul {
   display: flex;
 }
 
@@ -228,6 +224,10 @@ html body > header > .navigation ul, html body > main .projects .card-pro > arti
 
 html body > header > .navigation ul, html body > main > .container, html body > main .projects .card-pro img, html body > main > .mentions .card-mentions img {
   padding: 0;
+}
+
+html body > main > .container > #home .gitProfilePicture, html body > main > .container > #home .gitProfilePicture > img {
+  height: 20em;
 }
 
 @media screen and (min-width: 430px) and (max-width: 1024px) {
@@ -288,7 +288,6 @@ html body > main > .container {
 html body > main > .container > #home div h1 {
   font-size: 12.3em;
   font-family: "Italiana", "sans-serif";
-  text-align: center;
 }
 html body > main > .container > #home #devImg img {
   width: 35%;
@@ -298,26 +297,15 @@ html body > main > .container > #home p {
   margin-bottom: 2em;
   font-size: 22px;
 }
-html body > main > .container > #home .cardsHome .card-home button {
-  border: none;
-  background-color: transparent;
+html body > main > .container > #home .gitProfilePicture {
+  width: 100%;
+  border-radius: 50%;
 }
-html body > main > .container > #home .cardsHome .card-home button div {
-  justify-content: center;
-}
-html body > main > .container > #home .cardsHome .card-home button div h2 {
-  position: absolute;
-  top: 22.5em;
-  background-color: rgba(128, 128, 128, 0.8);
-  background-image: linear-gradient(45deg, #de4269, #0bdfe0);
-  padding: 0.5em 1em 0.5em 1em;
-}
-html body > main > .container > #home .cardsHome .card-home img {
+html body > main > .container > #home .gitProfilePicture > img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 20em;
-  height: 20em;
-  border: solid 7px rgba(128, 128, 128, 0.3);
+  border-radius: 50%;
 }
 html body > main .projects #filterbar {
   margin-bottom: 1em;
@@ -385,7 +373,6 @@ html body > main #formulaire .modal-container.active {
 }
 html body footer {
   margin-top: auto;
-  text-align: center;
   padding-top: 1em;
 }
 
