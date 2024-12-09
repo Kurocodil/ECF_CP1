@@ -57,3 +57,28 @@
 %pad0{
     padding:0;
 }
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:430px) and (max-width : 1024px){
+    %m_md_fontSize5{
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width: 430px){
+    %m_xs_fontSize5{
+        font-size: 5em;
+    }
+
+    %m_xs_fontSize3{
+        font-size: 3em;
+    }
+}
