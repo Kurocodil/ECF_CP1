@@ -327,3 +327,46 @@ function filterbar(){
         }
     })
 }
+
+
+
+// const modal = document.getElementById('confirmationModal');
+// form.addEventListener('submit', function (event) {
+//     event.preventDefault(); // Empeche l'envoi immédiat sans passer par la modal
+// // Stockage données et ouverture de la modal
+//     formData = { name, email, message };
+//     modal.style.display = 'flex';
+// });
+// // Gestion du bouton Confirmer
+// confirmButton.addEventListener('click', function () {
+//     modal.style.display = 'none';
+//     alert('Formulaire soumis avec succès !\n' +
+//         Nom: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message});
+//     form.reset(); // Reinitialise le formulaire
+// });
+
+// Gestion du bouton Annuler
+// cancelButton.addEventListener('click', function () {
+//     modal.style.display = 'none';
+// });
+
+
+function hideModal(){
+    let hideModal = document.getElementById('confirmationModal');
+    hideModal.style.display='none';
+}
+
+let formData ={};
+
+function modal(){
+    const Lastname = document.getElementById('lastname').value.trim();
+    const Firstname = document.getElementById('firstname').value.trim();
+    const Email = document.getElementById('email').value.trim();
+    const Message = document.getElementById('message').value.trim();
+    // Si lastname est vide ou trop long : trop long et return false
+    // Sinon vérifier first name vide ou trop long : same 
+    // sinon vérifier mail same : regex basique de mail ou vide
+    // sinon afficher modal confirmation
+    // si oui cliqué, cacher modal + dire message envoyé
+    // si non cliqué cacher modal + dire annulé
+}
