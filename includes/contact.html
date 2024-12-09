@@ -36,22 +36,35 @@
             <form>
                 <div>
                     <label for="lastname">Nom :</label> <br>
-                    <input type="text" name="lastname" placeholder="Sanchez">
+                    <input type="text" id="lastname" name="lastname"  placeholder="Sanchez">
                 </div>
                 <div>
                     <label for="name">Prénom :</label> <br>
-                    <input type="text" name="name" placeholder="Rick">
+                    <input type="text" id="firstname" name="name" placeholder="Rick">
                 </div>
                 <div>
-                    <label for="mail">Nom :</label> <br>
-                    <input type="email" name="mail" placeholder="aze@gmail.com">
+                    <label for="mail">Email :</label> <br>
+                    <input type="email" id="email" name="mail" placeholder="aze@gmail.com">
                 </div>
                 <div>
                     <label for="message">Message :</label> <br>
-                    <textarea name="message" rows="6"></textarea>
+                    <textarea id="message" name="message" rows="6"></textarea>
                 </div>
-                <button id="btnForm">Envoyer</button>
+                <button type="button" class="openClose" id="btnForm">Envoyer</button>
+                
+                <!-- Div pour erreur dans les informations -->
+                <div id="error-container"></div>
             </form>
+
+            <!-- Confirmation modale -->
+            <div class="modal-container" id="modal">
+                <div class="modal-contents">
+                    <p>Voulez-vous envoyez le formulaire ?</p>
+                    <button>Oui</button>
+                    <button class="modalBtn openClose">Annuler</button>
+               </div>
+            </div>
+
             <div id="infoContact">
                 <i class="fa-solid fa-phone"></i>
                 <label for="fa-phone">07 68 52 82 72 |</label>
@@ -65,8 +78,7 @@
     </main>
 
     <!-- Implémentation du JavaScript  -->
-    <script src="../js/frameworks/bootstrap.bundle.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

@@ -5,7 +5,6 @@ function hidePages(){
         page.style.display='none';
     })
 }
-
 // Fonction navigation
 function navFunction() {
     let urlSettings = window.location.hash || '#home';                              // récupérer le Lien actuel, sinon mettre #home
@@ -314,6 +313,7 @@ function navFunction() {
 navFunction();
 
 
+
 // Filtre projets
 function filterbar(){
     const Filtre = document.getElementById("filter").value.toLowerCase();           // Récupère l'entrée user en minuscule
@@ -327,3 +327,57 @@ function filterbar(){
         }
     })
 }
+
+
+const modal = document.getElementById('modal');
+// Affichage modale
+function activeModal(){
+    modal.classList.toggle('active')
+}
+// Vérif forma de texte
+function dataForm(){
+    const theError = document.getElementById('error-container');
+    theError.textContent = ''; // Efface les anciens messages
+    const lastname = document.getElementById('lastname').value;
+    const firstname = document.getElementById('firstname').value;
+    const mail = document.getElementById('email').value;
+    const message = document.getElementById('message').value;   
+    if (lastname == "" || lastname.length > 50){
+        console.log("nom vide")
+        theError.textContent = "Erreur : le nom est obligatoire, maximum 50 caractères.";
+        return false;
+    }
+    if (firstname == "" || firstname.length > 20){
+        console.log("prenom vide")
+        theError.textContent = "Erreur : le prénom est obligatoire, maximum 20 caractères.";
+        return false;
+    }
+    if(!mail.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/)){
+        console.log("mail invalide")
+        theError.textContent = "Erreur: mail invalide";
+        return false;
+    }
+    if (message ==""){
+        console.log("message vide")
+        theError.textContent = "Erreur : Vous devez écrire un message";
+        return false;
+    }
+    return true
+}
+const formBtn = document.getElementById('btnForm');
+formBtn.addEventListener('click', function(event) {
+    console.log("test")
+    event.preventDefault();  // Empêche la soumission du formulaire
+    let valide = dataForm();
+    console.log(valide);
+    if (valide) {
+        activeModal();  // Affiche la modale si les données sont valides
+    }
+});
+
+
+
+
+// lors de l'appuie sur le bouton envoie
+// bloqué envoie si erreur 
+// sinon afficher modale confirmation

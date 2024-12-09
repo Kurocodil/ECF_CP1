@@ -8,12 +8,12 @@
   src: url("/fonts/JosefinSans-VariableFont_wght.ttf");
   font-style: normal;
 }
-html body > main #formulaire input:focus, html body > main #formulaire textarea:focus, html body > main #formulaire #btnForm:focus {
+html body > main #formulaire input:focus, html body > main #formulaire textarea:focus, html body > main #formulaire .btnForm:focus {
   outline: solid 2px #de4269;
   background-color: lightcyan;
 }
 
-html body > main .projects #filterbar > input, html body > main .projects .card-pro, html body > main > .mentions .card-mentions, html body > main #formulaire input, html body > main #formulaire textarea, html body > main #formulaire #btnForm {
+html body > main .projects #filterbar > input, html body > main .projects .card-pro, html body > main > .mentions .card-mentions, html body > main #formulaire input, html body > main #formulaire textarea, html body > main #formulaire .btnForm, html body > main #formulaire .modal-container {
   border-radius: 12px;
 }
 
@@ -210,6 +210,12 @@ html body > main #formulaire a {
 }
 html body > main #formulaire a:hover {
   color: #de4269;
+}
+html body > main #formulaire .modal-container {
+  display: none;
+}
+html body > main #formulaire .modal-container.active {
+  display: block;
 }
 html body footer {
   margin-top: auto;

@@ -127,7 +127,7 @@ html{
                 textarea{
                     @include m.inputArea;
                 }
-                #btnForm{
+                .btnForm{
                     @extend %radius12;
                     @extend %focusArea;
                 }
@@ -140,6 +140,13 @@ html{
                     &:hover{
                         color: map-get(c.$colors, rose)
                     }
+                }
+                .modal-container{
+                    display:none;
+                    @extend %radius12;
+                }
+                .modal-container.active{
+                    display:block;
                 }
             }
         }
