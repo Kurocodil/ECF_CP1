@@ -41,7 +41,7 @@ html{
                         h1{
                             font-size: 12.3em;
                             font-family: t.$titre;
-                            text-align: center;
+                            @extend %textCenter;
                         }
                     }
                     #devImg{
@@ -58,11 +58,16 @@ html{
                         font-size: 22px;
                         @extend %testJustify;
                     }
-                    // Carte d'accueil
-                    .cardsHome{
+                    .gitProfilePicture{
+                        width: 100%;
+                        @extend %height20;
+                        border-radius: 50%;
                         @extend %textCenter;
-                        .card-home{
-                            @include m.carteHome;
+                        >img{
+                            object-fit: cover;
+                            width: 20em;
+                            @extend %height20;
+                            border-radius: 50%;
                         }
                     }
                 }
@@ -159,7 +164,7 @@ html{
         // Footer
         footer{
             margin-top: auto;
-            text-align: center;
+            @extend %textCenter;
             padding-top:1em;
         }
     }

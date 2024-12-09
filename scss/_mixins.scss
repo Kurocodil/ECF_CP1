@@ -33,29 +33,9 @@
 
 // Carte accueil
 @mixin carteHome{
-    button{
-        border: none;
-        background-color: transparent;
-        div{
-            @extend %flex;
-            justify-content: center;
-            h2{
-                position: absolute;
-                top: 22.5em;
-                background-color: rgb(128, 128, 128,0.8);
-                background-image: linear-gradient(45deg,map-get(c.$colors,rose),map-get(c.$colors,bleuClair));
-                padding: 0.5em 1em 0.5em 1em;
-                @extend %radius25;
-            }
-        }
-    }
-    img{
-        object-fit: cover;
-        width: 20em;
-        height: 20em;
-        border:solid 7px rgb(128, 128, 128, 0.3);
-        @extend %radius25;
-    }
+    border:solid 2px black;
+    width: 10em;
+    height: 10em;
 }
 
 // Carte projects
