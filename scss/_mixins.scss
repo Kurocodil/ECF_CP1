@@ -84,3 +84,15 @@
         }
     }
 }
+
+@mixin inputArea{
+    text-align: center;
+    width: 50%;
+    padding:0.3em;
+    border-radius: 12px;
+    border:solid 2px map-get(c.$colors,_violet);
+    &:focus{
+        outline:solid 2px map-get(c.$colors,rose);
+        background-color: lightcyan;
+    }
+}

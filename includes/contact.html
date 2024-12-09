@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/frameworks/bootstrap.min.css">
     <link rel="stylesheet" href="../css/frameworks/fontawesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/zoning.css">
+    <!-- <link rel="stylesheet" href="../css/zoning.css"> -->
 </head>
 
 <body>
@@ -19,9 +19,9 @@
         <div class="navigation">
             <nav>
                 <ul>
-                  <li><a href="../index.html#home" id="navBtn" onclick="test()">Accueil</a></li>
-                  <li><a href="../index.html#resume" id="navBtn" onclick="test()">CV</a></li>
-                  <li><a href="../index.html#projects" id="navBtn" onclick="test()">Projets</a></li>
+                  <li><a href="../index.html#home" id="navBtn">Accueil</a></li>
+                  <li><a href="../index.html#resume" id="navBtn">CV</a></li>
+                  <li><a href="../index.html#projects" id="navBtn">Projets</a></li>
                   <li><a href="#" id="navBtn">Contact</a></li>
                   <li><a href="mentions.html" id="navBtn">Mentions Légales</a></li>
                 </ul>
@@ -31,32 +31,37 @@
 
     <!-- Main Body -->
     <main>
-        <h1>Contactez-nous</h1>
-        <form>
-            <div class="row">
-                <div class="col-lg-6">
-                    <label for="nom">Nom</label><br>
-                    <input type="text" id="nom">
+        <div id="formulaire">
+            <h1>Contactez-nous</h1>
+            <form>
+                <div>
+                    <label for="lastname">Nom :</label> <br>
+                    <input type="text" name="lastname" placeholder="Sanchez">
                 </div>
-                <div class="col-lg-6">
-                    <label for="prenom">Prénom</label><br>
-                    <input type="text" id="prenom">
+                <div>
+                    <label for="name">Prénom :</label> <br>
+                    <input type="text" name="name" placeholder="Rick">
                 </div>
+                <div>
+                    <label for="mail">Nom :</label> <br>
+                    <input type="email" name="mail" placeholder="aze@gmail.com">
+                </div>
+                <div>
+                    <label for="message">Message :</label> <br>
+                    <textarea name="message" rows="6"></textarea>
+                </div>
+                <button id="btnForm">Envoyer</button>
+            </form>
+            <div id="infoContact">
+                <i class="fa-solid fa-phone"></i>
+                <label for="fa-phone">07 68 52 82 72 |</label>
+                <i class="fa-solid fa-envelope"></i>
+                <label for="fa-envelope">matheo.siron@gmail.com |</label>
+                <i class="fa-brands fa-linkedin"></i>
+                <label for="fa-envelope"><a href="https://www.linkedin.com/in/mathéo-siron/" target="_blank">Mathéo Siron</a></label>
             </div>
-            <div class="row">
-                <div class="col-lg">
-                    <label for="mail">Email</label><br>
-                    <input type="email" id="mail">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg">
-                    <label for="message">Message</label><br>
-                    <textarea id="message"></textarea>
-                </div>
-            </div>
-            <button type="submit" id="contactBtn">Envoyer</button>
-        </form>
+        </div>
+
     </main>
 
     <!-- Implémentation du JavaScript  -->

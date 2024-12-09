@@ -184,6 +184,48 @@ html body > main > .mentions h1 {
   text-align: center;
   font-size: 9em;
 }
+html body > main #formulaire {
+  text-align: center;
+  width: 100%;
+}
+html body > main #formulaire input {
+  text-align: center;
+  width: 50%;
+  padding: 0.3em;
+  border-radius: 12px;
+  border: solid 2px #6c125c;
+}
+html body > main #formulaire input:focus {
+  outline: solid 2px #de4269;
+  background-color: lightcyan;
+}
+html body > main #formulaire textarea {
+  text-align: center;
+  width: 50%;
+  padding: 0.3em;
+  border-radius: 12px;
+  border: solid 2px #6c125c;
+}
+html body > main #formulaire textarea:focus {
+  outline: solid 2px #de4269;
+  background-color: lightcyan;
+}
+html body > main #formulaire #btnForm {
+  border-radius: 12px;
+}
+html body > main #formulaire #btnForm:focus {
+  outline: solid 5px #de4269;
+}
+html body > main #formulaire #infoContact {
+  margin-top: 5em;
+}
+html body > main #formulaire a {
+  text-decoration: none;
+  color: black;
+}
+html body > main #formulaire a:hover {
+  color: #de4269;
+}
 html body footer {
   margin-top: auto;
 }

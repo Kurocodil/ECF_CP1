@@ -110,6 +110,33 @@ html{
                     font-size: 9em;
                 }     
             }
+            // Mise en page Contact
+            #formulaire{
+                text-align: center;
+                width: 100%;
+                input{
+                    @include m.inputArea;
+                }
+                textarea{
+                    @include m.inputArea;
+                }
+                #btnForm{
+                    border-radius:12px;
+                    &:focus{
+                        outline:solid 5px map-get(c.$colors,rose);
+                    }
+                }
+                #infoContact{
+                    margin-top:5em;
+                }
+                a{
+                    text-decoration: none;
+                    color:black;
+                    &:hover{
+                        color: map-get(c.$colors, rose)
+                    }
+                }
+            }
         }
         footer{
             margin-top:auto;
