@@ -3,18 +3,18 @@
 
 @mixin navigation_bar{
     ul{
-        list-style: none;
-        display:flex;
-        flex-direction:row;
-        margin:0;
-        padding:0;
-        width: 100%;
+        @extend %noDeco;
+        @extend %flex;
+        flex-direction: row;
+        margin: 0;
+        @extend %pad0;
+        @extend %width100;
         >li{
-            text-decoration: none;
-            margin-top:0.5em;
+            @extend %noDeco;
+            margin-top: 0.5em;
             padding: 0.5em 1em 0.5em 1em;
             >a{
-                text-decoration: none;
+                @extend %noDeco;
                 color:rgb(36, 36, 36);
                 &:hover{
                     color:rgb(255, 13, 215);
@@ -23,7 +23,7 @@
             &:hover{
                 transition: all ease 0.5s;
                 background-color: rgba(166, 139, 241, 0.3);
-                border-radius:10px 5px 5px;
+                border-radius: 10px 5px 5px;
                 color:rgb(255, 13, 215);
                 cursor: pointer;
             }
@@ -33,18 +33,18 @@
 
 @mixin carteHome{
     button{
-        border:none;
+        border: none;
         background-color: transparent;
         div{
-            display:flex;
+            @extend %flex;
             justify-content: center;
             h2{
                 position: absolute;
-                top:22.5em;
+                top: 22.5em;
                 background-color: rgb(128, 128, 128,0.8);
                 background-image: linear-gradient(45deg,map-get(c.$colors,rose),map-get(c.$colors,bleuClair));
-                padding:0.5em 1em 0.5em 1em;
-                border-radius:25px;
+                padding: 0.5em 1em 0.5em 1em;
+                @extend %radius25;
             }
         }
     }
@@ -53,46 +53,44 @@
         width: 20em;
         height: 20em;
         border:solid 7px rgb(128, 128, 128, 0.3);
-        border-radius:25px;
+        @extend %radius25;
     }
 }
 
 @mixin cardPro{
     background-color: white;
-    border-radius:12px;
+    @extend %radius12;
     box-shadow: 10px 10px 5px rgb(173, 173, 173);
-    padding-top:0.5em;
-    margin:0.5em;
+    padding-top: 0.5em;
+    margin: 0.5em;
     width: 25em;
     height: 32em;
     img{
-        padding:0;
+        @extend %pad0;
     }
+    
     footer{
-        padding:0.5em;
+        padding: 0.5em;
     }
     >header{
         >h4{
-            text-align: center;
+            @extend %textCenter;
             font-size: 30px;
         }
     }
     >article{
         >img{
-            width: 100%;
-            height: auto;
+            @extend %width100;
+            @extend %autoHeight;
         }
     }
 }
 
 @mixin inputArea{
-    text-align: center;
+    @extend %textCenter;
     width: 50%;
-    padding:0.3em;
-    border-radius: 12px;
+    padding: 0.3em;
+    @extend %radius12;
     border:solid 2px map-get(c.$colors,_violet);
-    &:focus{
-        outline:solid 2px map-get(c.$colors,rose);
-        background-color: lightcyan;
-    }
+    @extend %focusArea;
 }

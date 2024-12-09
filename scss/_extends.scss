@@ -1,0 +1,59 @@
+@use "sass:map";
+@use '_colors.scss'  as c;
+
+%focusArea{
+    &:focus{
+        outline:solid 2px map-get(c.$colors,rose);
+        background-color: lightcyan;
+    }
+}
+
+%radius12{
+    border-radius: 12px;
+}
+
+%radius25{
+    border-radius: 25px;
+}
+
+%disFlexCol{
+    display:flex;
+    flex-direction: column;
+}
+
+%textCenter{
+    text-align: center;
+}
+
+%noDeco{
+    text-decoration: none;
+    list-style: none;
+}
+
+%flex{
+    display:flex;
+}
+
+%fontSize9{
+    font-size: 9em;
+}
+
+%margTop2{
+    margin-top:2em;
+}
+
+%testJustify{
+    text-align: justify;
+}
+
+%autoHeight{
+    height: auto;
+}
+
+%width100{
+    width: 100%;
+}
+
+%pad0{
+    padding:0;
+}
