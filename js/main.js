@@ -16,12 +16,12 @@ function navFunction() {
         case '#home':                                                               // Affichage Page Home 
             home.innerHTML=`<div class="home page">
                 <div class="row">
-                    <h1 class="col-lg ">MATHEO SIRON</h1>
+                    <h1 class="col-lg fade-down">MATHEO SIRON</h1>
                 </div>
-                <div id="devImg">
+                <div id="devImg" class="fade-far-left">
                     <img src="assets/imgs/bande_dev.png" alt="Bandeau Développeur Web">
                 </div>
-                <p>
+                <p class="Spawn">
                     Passionné depuis plusieurs années par le développement web, 
                     je me suis orienté vers une formation de DWWM et suis ainsi devenu apprenti développeur en Full-stack. J’ai à l’heure actuelle, bien 
                     plus d’appétence pour la partie Front-end de la création de site, mais n’en reste pas moins curieux, 
@@ -53,16 +53,16 @@ function navFunction() {
             break;  
         case '#resume':                                                             // Affichage Page Resume
             resume.innerHTML=`<div class="resume page">
-            <h1>CV</h1>
+            <h1 class="fade-down">CV</h1>
             <div class="row">
                 <div class="col-lg">
-                    <div class="cv">
+                    <div class="cv fade-right">
                         <img src="assets/imgs/cv_img.PNG" alt="CV">
                     </div>
                 </div>
                 <div class="col-lg">
-                    <h4><u>A propos de moi</u></h4>
-                    <p>
+                    <h4 class="Spawn"><u><i class="fa-solid fa-feather"></i>A propos de moi</u></h4>
+                    <p class="Spawn">
                         Bonjour ! <br> 
                         &emsp; &emsp;Je suis un passionné de musique, particulièrement de basse. La musique occupe une place 
                         importante dans ma vie. <br>
@@ -70,7 +70,7 @@ function navFunction() {
                         préparé avec soin, c’est un vrai plaisir pour moi ! J’adore aussi voyager pour m’immerger 
                         dans de nouvelles cultures ou encore partir en randonnée dans la nature. J'aime aussi les jeux vidéos, de tout genre.
                     </p>
-                    <p>
+                    <p class="Spawn">
                         &emsp; &emsp;Pour ce qui est de mes points forts, je dirai que je suis quelqu'un de curieux, toujours prêt à explorer 
                         de nouveaux domaines 
                         et à apprendre. L'autonomie est une de mes forces : je n’ai pas peur de me lancer dans de nouveaux 
@@ -79,21 +79,21 @@ function navFunction() {
                         personnes, que ce soit pour échanger des idées ou collaborer. La persévérance sont des valeurs que je porte, 
                         car je crois que chaque effort mène à un résultat.
                     </p>
-                    <p>Vous pouvez télécharger le CV en cliquant <a href="assets/imgs/CV_matheo_siron_dwwm.pdf" target="_blank">ici</a>.</p>
+                    <p class="Spawn"><strong>Vous pouvez télécharger le CV en cliquant ici <a href="assets/imgs/CV_matheo_siron_dwwm.pdf" target="_blank"><i class="fa-solid fa-download"></i></a></strong></p>
                 </div>
             </div>
         </div>`
             break;
         case '#projects':                                                           // Affichage Page Projects
             projects.innerHTML=`<div class="projects page">
-    <h1>Projets</h1>
-    <div id="filterbar">
+    <h1 class="fade-down">Projets</h1>
+    <div id="filterbar" class="Spawn">
         <input type="text" id="filter" placeholder="Nom du projet" onkeyup="filterbar()">
     </div>
     <!-- Cartes Projets -->
     <div class="row">
         <!-- Carte 1 -->
-        <div class="col-xl-4 col-lg col-md-4">
+        <div class="col-xl-4 col-lg col-md-4 fade-up fade-up">
             <section class="card-pro" data-titre="AC/DC">
                 <header>
                     <h4>AC/DC</h4>
@@ -114,7 +114,7 @@ function navFunction() {
             </section>
         </div>
         <!-- Carte 2 -->
-        <div class="col-xl-4 col-lg col-md-4">
+        <div class="col-xl-4 col-lg col-md-4 fade-up">
             <section class="card-pro" data-titre="L'antre du livre">
                 <header>
                     <h4>L'antre du livre</h4>
@@ -136,7 +136,7 @@ function navFunction() {
             </section>
         </div>
         <!-- Carte 3 -->
-        <div class="col-xl-4 col-lg col-md-4">
+        <div class="col-xl-4 col-lg col-md-4 fade-up">
             <section class="card-pro" data-titre="Artistes Peintres">
                 <header>
                     <h4>Artistes Peintres</h4>
@@ -160,7 +160,7 @@ function navFunction() {
     </div>
     <div class="row">
         <!-- Carte 4 -->
-        <div class="col-xl-4 col-lg col-md-4">
+        <div class="col-xl-4 col-lg col-md-4 fade-up">
             <section class="card-pro" data-titre="Choco Boom">
                 <header>
                     <h4>Choco Boom</h4>
@@ -180,7 +180,7 @@ function navFunction() {
             </section>
         </div>
        <!-- Carte 5 -->
-        <div class="col-xl-4 col-lg col-md-4">          
+        <div class="col-xl-4 col-lg col-md-4 fade-up">          
             <section class="card-pro" data-titre="Galerie d'animaux">
                 <header>
                     <h4>Galerie d'animaux</h4>
@@ -201,7 +201,7 @@ function navFunction() {
             </section>
         </div>
         <!-- Carte 6 -->
-        <div class="col-xl-4 col-lg col-md-4">
+        <div class="col-xl-4 col-lg col-md-4 fade-up">
             <section class="card-pro" data-titre="History Game">
                 <header>
                     <h4>History Game</h4>
@@ -224,7 +224,7 @@ function navFunction() {
     </div>
     <div class="row">
         <!-- Carte 7 -->
-        <div class="col-xl-4 col-lg col-md-4">
+        <div class="col-xl-4 col-lg col-md-4 fade-up">
             <section class="card-pro" data-titre="Shoesplash">
                 <header>
                     <h4>Shoesplash</h4>
@@ -244,7 +244,7 @@ function navFunction() {
             </section>
         </div>
         <!-- Carte 8 -->
-        <div class="col-xl-4 col-lg col-md-4">
+        <div class="col-xl-4 col-lg col-md-4 fade-up">
            <section class="card-pro" data-titre="Portfolio">
                <header>
                    <h4>Portfolio</h4>

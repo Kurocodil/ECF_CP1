@@ -4,7 +4,7 @@
 @use '_typo.scss'    as t;
 @use '_extends.scss';
 @use '_mixins.scss'   as m;
-
+@use '_keyframes.scss' as k;
 
 html{
     background-image: url(/assets/imgs/fond.jpg);
@@ -30,8 +30,6 @@ html{
             >.container{
                 @extend %pad0;
                 margin:0;
-                text-align: center;
-                // Mise en page Accueil
                 >#home{
                     div{
                         h1{

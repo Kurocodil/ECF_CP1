@@ -1,0 +1,86 @@
+// Slide descendant 
+@keyframes fadeDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+.fade-down {
+    animation: fadeDown 1s ease-in-out;
+}
+
+// Slide montant 
+@keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+.fade-up {
+    animation: fadeUp 1s ease-in-out;
+}
+
+// Slide vers la droite
+@keyframes fadeRight {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+.fade-right {
+    animation: fadeRight 1s ease-in-out;
+}
+
+// Slide vers la gauche
+@keyframes fadeLeft {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+.fade-left {
+    animation: fadeLeft 1s ease-in-out;
+}
+
+// Slide vers la gauche de loin
+@keyframes FadeFarLeft {
+    from {
+      opacity: 0;
+      transform: translateX(275px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+.fade-far-left {
+    animation: FadeFarLeft 1s ease-in-out;
+}
+// Apparition
+@keyframes Spawn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+.Spawn {
+    animation: Spawn 2s ease-in-out;
+}
