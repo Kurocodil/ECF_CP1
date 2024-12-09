@@ -28,7 +28,7 @@ function navFunction() {
                     et motivé par le côté Back-end de la programmation. En terme de design j'aime ce qui est coloré, tout en restant sobre.
                 </p>
                 <div class="gitProfilePicture fade-up">
-                    <img src="../assets/imgs/PPGithub.jpg" alt="GitHub Profile Picture">
+                    <img src="assets/imgs/PPGithub.jpg" alt="GitHub Profile Picture">
                 </div>
             </div>`
             break;  
@@ -264,7 +264,7 @@ function navFunction() {
                     et motivé par le côté Back-end de la programmation. En terme de design j'aime ce qui est coloré, tout en restant sobre.
                 </p>
                 <div class="gitProfilePicture fade-up">
-                    <img src="../assets/imgs/PPGithub.jpg" alt="GitHub Profile Picture">
+                    <img src="assets/imgs/PPGithub.jpg" alt="GitHub Profile Picture">
                 </div>
             </div>`
             break;
