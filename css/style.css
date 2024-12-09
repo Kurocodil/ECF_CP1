@@ -8,74 +8,6 @@
   src: url("/fonts/JosefinSans-VariableFont_wght.ttf");
   font-style: normal;
 }
-html body > main #formulaire input:focus, html body > main #formulaire textarea:focus, html body > main #formulaire .btnForm:focus {
-  outline: solid 2px #de4269;
-  background-color: lightcyan;
-}
-
-html body > main .projects #filterbar > input, html body > main .projects .card-pro, html body > main > .mentions .card-mentions, html body > main #formulaire input, html body > main #formulaire textarea, html body > main #formulaire .btnForm, html body > main #formulaire .modal-container {
-  border-radius: 12px;
-}
-
-html body > main > .container > #home .cardsHome .card-home button div h2, html body > main > .container > #home .cardsHome .card-home img {
-  border-radius: 25px;
-}
-
-html body, html body > main .resume .cv {
-  display: flex;
-  flex-direction: column;
-}
-
-html body > main > .container > #home .cardsHome, html body > main .projects h1, html body > main .projects #filterbar, html body > main .projects .card-pro > header > h4, html body > main .resume h1, html body > main > .mentions > p, html body > main > .mentions .card-mentions > header > h4, html body > main > .mentions h1, html body > main #formulaire, html body > main #formulaire h1, html body > main #formulaire input, html body > main #formulaire textarea {
-  text-align: center;
-}
-
-html body > header > .navigation ul, html body > header > .navigation ul > li, html body > header > .navigation ul > li > a, html body > main #formulaire a {
-  text-decoration: none;
-  list-style: none;
-}
-
-html body > header > .navigation ul, html body > main > .container > #home .cardsHome .card-home button div {
-  display: flex;
-}
-
-html body > main .projects h1, html body > main .resume h1, html body > main > .mentions h1, html body > main #formulaire h1 {
-  font-size: 9em;
-}
-
-html body > main > .container > #home p {
-  margin-top: 2em;
-}
-
-html body > main > .container > #home p, html body > main .resume p {
-  text-align: justify;
-}
-
-html body > main > .container > #home #devImg img, html body > main .projects .card-pro > article > img, html body > main > .mentions .card-mentions > article > img, html body > main > .mentions .card-mentions {
-  height: auto;
-}
-
-html body > header > .navigation ul, html body > main .projects .card-pro > article > img, html body > main > .mentions .card-mentions > article > img, html body > main #formulaire {
-  width: 100%;
-}
-
-html body > header > .navigation ul, html body > main > .container, html body > main .projects .card-pro img, html body > main > .mentions .card-mentions img {
-  padding: 0;
-}
-
-@media screen and (min-width: 430px) and (max-width: 1024px) {
-  html > body main #formulaire h1, html > body main .mentions h1 {
-    font-size: 5em;
-  }
-}
-@media screen and (max-width: 430px) {
-  html > body main #resume h1, html > body main #projects h1 {
-    font-size: 5em;
-  }
-  html > body main #formulaire h1, html > body main .mentions h1 {
-    font-size: 3em;
-  }
-}
 @keyframes fadeDown {
   from {
     opacity: 0;
@@ -158,6 +90,159 @@ html body > header > .navigation ul, html body > main > .container, html body > 
   animation: Spawn 2s ease-in-out;
 }
 
+@keyframes flashing {
+  0% {
+    color: black;
+  }
+  50% {
+    color: #de4269;
+    font-weight: bold;
+  }
+  100% {
+    color: black;
+  }
+}
+.flashing {
+  animation: flashing 5s infinite ease;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+}
+
+@keyframes gradientBorder {
+  0% {
+    -o-border-image: linear-gradient(0deg, pink, purple);
+       border-image: linear-gradient(0deg, pink, purple);
+    border-image-slice: 1;
+  }
+  10% {
+    -o-border-image: linear-gradient(36deg, pink, purple);
+       border-image: linear-gradient(36deg, pink, purple);
+    border-image-slice: 1;
+  }
+  20% {
+    -o-border-image: linear-gradient(72deg, pink, purple);
+       border-image: linear-gradient(72deg, pink, purple);
+    border-image-slice: 1;
+  }
+  30% {
+    -o-border-image: linear-gradient(108deg, pink, purple);
+       border-image: linear-gradient(108deg, pink, purple);
+    border-image-slice: 1;
+  }
+  40% {
+    -o-border-image: linear-gradient(144deg, pink, purple);
+       border-image: linear-gradient(144deg, pink, purple);
+    border-image-slice: 1;
+  }
+  50% {
+    -o-border-image: linear-gradient(180deg, pink, purple);
+       border-image: linear-gradient(180deg, pink, purple);
+    border-image-slice: 1;
+  }
+  60% {
+    -o-border-image: linear-gradient(216deg, pink, purple);
+       border-image: linear-gradient(216deg, pink, purple);
+    border-image-slice: 1;
+  }
+  70% {
+    -o-border-image: linear-gradient(252deg, pink, purple);
+       border-image: linear-gradient(252deg, pink, purple);
+    border-image-slice: 1;
+  }
+  80% {
+    -o-border-image: linear-gradient(288deg, pink, purple);
+       border-image: linear-gradient(288deg, pink, purple);
+    border-image-slice: 1;
+  }
+  90% {
+    -o-border-image: linear-gradient(324deg, pink, purple);
+       border-image: linear-gradient(324deg, pink, purple);
+    border-image-slice: 1;
+  }
+  100% {
+    -o-border-image: linear-gradient(360deg, pink, purple);
+       border-image: linear-gradient(360deg, pink, purple);
+    border-image-slice: 1;
+  }
+}
+.gradient-border {
+  animation: gradientBorder 5s infinite ease;
+}
+
+html body > main .projects #filterbar > input:focus, html body > main #formulaire input:focus, html body > main #formulaire textarea:focus, html body > main #formulaire #btnForm:focus {
+  outline: solid 2px #de4269;
+  background-color: lightcyan;
+  border-radius: 12px;
+}
+
+html body > main .projects #filterbar > input, html body > main .projects .card-pro, html body > main > .mentions .card-mentions, html body > main #formulaire input, html body > main #formulaire textarea, html body > main #formulaire #btnForm, html body > main #formulaire .modal-container {
+  border-radius: 12px;
+}
+
+html body > main > .container > #home .cardsHome .card-home button div h2, html body > main > .container > #home .cardsHome .card-home img {
+  border-radius: 25px;
+}
+
+html body, html body > main .resume .cv {
+  display: flex;
+  flex-direction: column;
+}
+
+html body > main > .container > #home .cardsHome, html body > main .projects h1, html body > main .projects #filterbar, html body > main .projects .card-pro > header > h4, html body > main .resume h1, html body > main > .mentions > p, html body > main > .mentions .card-mentions > header > h4, html body > main > .mentions h1, html body > main #formulaire, html body > main #formulaire h1, html body > main #formulaire input, html body > main #formulaire textarea {
+  text-align: center;
+}
+
+html body > header > .navigation ul, html body > header > .navigation ul > li, html body > header > .navigation ul > li > a, html body > main #formulaire a {
+  text-decoration: none;
+  list-style: none;
+}
+
+html body > header > .navigation ul, html body > main > .container > #home .cardsHome .card-home button div {
+  display: flex;
+}
+
+html body > main .projects h1, html body > main .resume h1, html body > main > .mentions h1, html body > main #formulaire h1 {
+  font-size: 9em;
+}
+
+html body > main > .container > #home p {
+  margin-top: 2em;
+}
+
+html body > main > .container > #home p, html body > main .resume p {
+  text-align: justify;
+}
+
+html body > main > .container > #home #devImg img, html body > main .projects .card-pro > article > img, html body > main > .mentions .card-mentions > article > img, html body > main > .mentions .card-mentions {
+  height: auto;
+}
+
+html body > header > .navigation ul, html body > main .projects .card-pro > article > img, html body > main > .mentions .card-mentions > article > img, html body > main #formulaire {
+  width: 100%;
+}
+
+html body > header > .navigation ul, html body > main > .container, html body > main .projects .card-pro img, html body > main > .mentions .card-mentions img {
+  padding: 0;
+}
+
+@media screen and (min-width: 430px) and (max-width: 1024px) {
+  html > body main #formulaire h1, html > body main .mentions h1 {
+    font-size: 5em;
+  }
+}
+@media screen and (max-width: 430px) {
+  html > body main #resume h1, html > body main #projects h1 {
+    font-size: 5em;
+  }
+  html > body main #formulaire h1, html > body main .mentions h1 {
+    font-size: 3em;
+  }
+}
 html {
   background-image: url(/assets/imgs/fond.jpg);
   background-attachment: fixed;
@@ -179,7 +264,7 @@ html body > header > .navigation ul {
 }
 html body > header > .navigation ul > li {
   margin-top: 0.5em;
-  padding: 0.5em 0.2em 0.5em 0.2em;
+  padding: 0.5em 0.5em 0.5em 0.5em;
 }
 html body > header > .navigation ul > li > a {
   color: rgb(36, 36, 36);
@@ -300,6 +385,8 @@ html body > main #formulaire .modal-container.active {
 }
 html body footer {
   margin-top: auto;
+  text-align: center;
+  padding-top: 1em;
 }
 
 @media screen and (min-width: 430px) and (max-width: 1024px) {

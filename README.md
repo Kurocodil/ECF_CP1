@@ -6,7 +6,8 @@ Ce dépôt contient le code source du projet Portfolio de l'examen ECF CP1 de la
 - **HTML5** - Structure du contenu web.
 - **SCSS** - Mise en forme et design du site.
 - **JavaScript** - Interactivité, recherche, filtre et tri.
-- **Frameworks/Bibliothèques** Bootstrap pour le responsive design.  
+- **Frameworks/Bibliothèques** - Bootstrap pour le responsive design. 
+- **FontAwesome** - Icônes
 
 <u>Framework utilisé</u>
 
@@ -43,9 +44,10 @@ Les wireframes et prototypes doivent également être dans le dossier docs/.
 8. Anglophone : le nom des fonctions, attributs html (id, name, classes, etc.) doivent être en anglais.
 
 ## Fonctionnalités
-
-
-A venir
+- Animations
+- Navigation JS dynamique / externe
+- Filtre par saisie de titre sur page projet
+- Systeme de modale, regex sur le formulaire (pas au point)
 
 ## Structure du projet
 /assets  

@@ -108,7 +108,7 @@
         <tr>
             <td>Finition de la gestion de projet</td>
             <td>Mathéo</td>
-            <td>En cours</td>
+            <td>Fait</td>
         </tr>
     </tbody>
 </table>
@@ -208,7 +208,7 @@
         <tr>
             <td>navigation indépendante vers dynamique</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
     </tbody>
 </table>
@@ -232,17 +232,17 @@
         <tr>
             <td>Mise en page de toute les pages</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
         <tr>
             <td>Mise en place du responsive</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
         <tr>
             <td>Mise en place des extends</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
     </tbody>
 </table>
@@ -266,12 +266,12 @@
         <tr>
             <td>Analyse / pseudo-code JS</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
         <tr>
             <td>Fonctionnalité JS</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
     </tbody>
 </table>
@@ -293,7 +293,7 @@
         <tr>
             <td>Animation du site</td>
             <td>Mathéo</td>
-            <td>Pas commencé</td>
+            <td>fait</td>
         </tr>
     </tbody>
 </table>

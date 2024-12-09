@@ -14,45 +14,52 @@
 </head>
 
 <body>
-    <!-- Header Body -->
+    <!-- Header  -->
     <header>
         <div class="navigation">
             <nav>
                 <ul>
-                  <li><a href="../index.html#home"><i class="fa-solid fa-house"> |</i> Accueil</a></li>
-                  <li><a href="../index.html#resume"><i class="fa-solid fa-book"> |</i> Cv</a></li>
-                  <li><a href="../index.html#projects"><i class="fa-solid fa-bars-progress"> |</i> Projets</a></li>
-                  <li><a href="#"><i class="fa-solid fa-address-book"> |</i> Contact</a></li>
-                  <li><a href="mentions.html"><i class="fa-solid fa-scale-unbalanced-flip"> |</i> Mentions Légales</a></li>
+                  <li class="grow"><a href="../index.html#home"><i class="fa-solid fa-house"> |</i> Accueil</a></li>
+                  <li class="grow"><a href="../index.html#resume"><i class="fa-solid fa-book"> |</i> Cv</a></li>
+                  <li class="grow"><a href="../index.html#projects"><i class="fa-solid fa-bars-progress"> |</i> Projets</a></li>
+                  <li class="grow"><a href="#"><i class="fa-solid fa-address-book"> |</i> Contact</a></li>
+                  <li class="grow"><a href="mentions.html"><i class="fa-solid fa-scale-unbalanced-flip"> |</i> Mentions Légales</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     
-    <!-- Main Body -->
+    <!-- Main  -->
     <main>
+        <!-- Formulaire -->
         <div id="formulaire">
+            <!-- Titre -->
             <h1 class="fade-down">Contactez-nous</h1>
             <form  class="Spawn">
+                <!-- Input nom -->
                 <div>
                     <label for="lastname">Nom :</label> <br>
                     <input type="text" id="lastname" name="lastname"  placeholder="Sanchez">
                 </div>
+                <!-- Input prenom -->
                 <div>
                     <label for="name">Prénom :</label> <br>
                     <input type="text" id="firstname" name="name" placeholder="Rick">
                 </div>
+                <!-- Input mail -->
                 <div>
                     <label for="mail">Email :</label> <br>
                     <input type="email" id="email" name="mail" placeholder="aze@gmail.com">
                 </div>
+                <!-- Input message -->
                 <div>
                     <label for="message">Message :</label> <br>
                     <textarea id="message" name="message" rows="6"></textarea>
                 </div>
+                <!-- Bouton submit -->
                 <button type="button" class="openClose" id="btnForm">Envoyer</button>
                 
-                <!-- Div pour erreur dans les informations -->
+                <!-- Div erreur informations -->
                 <div id="error-container"></div>
             </form>
 
@@ -64,18 +71,23 @@
                     <button class="modalBtn openClose">Annuler</button>
                </div>
             </div>
-
+            <!-- Block Information contact -->
             <div id="infoContact" class="fade-up">
                 <i class="fa-solid fa-phone"></i>
                 <label for="fa-phone">07 68 52 82 72 |</label>
-                <i class="fa-solid fa-envelope"></i>
-                <label for="fa-envelope">matheo.siron@gmail.com |</label>
                 <i class="fa-brands fa-linkedin"></i>
-                <label for="fa-envelope"><a href="https://www.linkedin.com/in/mathéo-siron/" target="_blank">Mathéo Siron</a></label>
+                <label for="fa-envelope"><a href="https://www.linkedin.com/in/mathéo-siron/" target="_blank" class="flashing">mathéo-siron</a>  |</label>
+                <i class="fa-solid fa-envelope"></i>
+                <label for="fa-envelope">matheo.siron@gmail.com</label>
             </div>
         </div>
 
     </main>
+    <!-- Footer -->
+    <footer>
+        <!-- Copyright -->
+        <p>&copy; Copyright - Kuroco's Inc.</p>
+    </footer>
 
     <!-- Implémentation du JavaScript  -->
     <script src="../js/main.js"></script>
