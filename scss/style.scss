@@ -25,14 +25,19 @@ html{
         }
         >main{
             padding-top: 1em;
+            display:flex;
+            justify-content: center;
             >.container{
                 @extend %pad0;
+                margin:0;
+                text-align: center;
                 // Mise en page Accueil
                 >#home{
                     div{
                         h1{
                             font-size: 12.3em;
                             font-family: t.$titre;
+                            text-align: center;
                         }
                     }
                     #devImg{
@@ -75,6 +80,7 @@ html{
                 }
                 .card-pro{
                     @include m.cardPro;
+                    height: 32em;
                 }
             }
             // Mise en page CV
@@ -111,6 +117,10 @@ html{
             #formulaire{
                 @extend %textCenter;
                 @extend %width100;
+                h1{
+                    @extend %textCenter;
+                    @extend %fontSize9;
+                }
                 input{
                     @include m.inputArea;
                 }
@@ -139,15 +149,81 @@ html{
     }
 }
 
-@media screen and (max-width : 1024px){
+@media screen and (min-width:430px) and (max-width : 1024px){
     html > body{
         margin: 0;
         main{
+            #home{
+                h1{
+                    font-size: 8em !important ;
+                }
+            }
             #resume{
                 .row{
                     flex-direction: column;
                 }
+                h1{
+                    font-size: 7em;
+                }
+            }
+            #projects{
+                .projects{
+                    width: 100%;
+                }
+            }
+            #formulaire{
+                h1{
+                    @extend %m_md_fontSize5;
+                }
+            }
+            .mentions{
+                h1{
+                    @extend %m_md_fontSize5;
+                }
             }
         }
     }
+}
+
+@media screen and (max-width: 430px){
+    html{
+        >body{
+            >header{
+                .navigation ul{
+                    flex-direction:column;
+                    text-align: center;
+                }
+            }
+            margin: 0;
+            main{
+                #home{
+                    h1{
+                        font-size: 5em !important;
+                    }
+                }
+                #resume{
+                    padding:0em 0.5em 0em 0.5em;
+                    h1{
+                        @extend %m_xs_fontSize5;
+                    }
+                }
+                #projects{
+                    h1{
+                        @extend %m_xs_fontSize5;
+                    }
+                    
+                }
+                #formulaire{
+                    h1{
+                        @extend %m_xs_fontSize3;
+                    }
+                }
+                .mentions{
+                    h1{
+                        @extend %m_xs_fontSize3;
+                    }
+                }
+            }
+        }
+    } 
 }
