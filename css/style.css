@@ -8,6 +8,61 @@
   src: url("/fonts/JosefinSans-VariableFont_wght.ttf");
   font-style: normal;
 }
+html body > main #formulaire input:focus, html body > main #formulaire textarea:focus, html body > main #formulaire #btnForm:focus {
+  outline: solid 2px #de4269;
+  background-color: lightcyan;
+}
+
+html body > main .projects #filterbar > input, html body > main .projects .card-pro, html body > main > .mentions .card-mentions, html body > main #formulaire input, html body > main #formulaire textarea, html body > main #formulaire #btnForm {
+  border-radius: 12px;
+}
+
+html body > main > .container > #home .cardsHome .card-home button div h2, html body > main > .container > #home .cardsHome .card-home img {
+  border-radius: 25px;
+}
+
+html body, html body > main .resume .cv {
+  display: flex;
+  flex-direction: column;
+}
+
+html body > main > .container > #home .cardsHome, html body > main .projects h1, html body > main .projects #filterbar, html body > main .projects .card-pro > header > h4, html body > main .resume h1, html body > main > .mentions > p, html body > main > .mentions .card-mentions > header > h4, html body > main > .mentions h1, html body > main #formulaire, html body > main #formulaire input, html body > main #formulaire textarea {
+  text-align: center;
+}
+
+html body > header > .navigation ul, html body > header > .navigation ul > li, html body > header > .navigation ul > li > a, html body > main #formulaire a {
+  text-decoration: none;
+  list-style: none;
+}
+
+html body > header > .navigation ul, html body > main > .container > #home .cardsHome .card-home button div {
+  display: flex;
+}
+
+html body > main .projects h1, html body > main .resume h1, html body > main > .mentions h1 {
+  font-size: 9em;
+}
+
+html body > main > .container > #home p {
+  margin-top: 2em;
+}
+
+html body > main > .container > #home p, html body > main .resume p {
+  text-align: justify;
+}
+
+html body > main > .container > #home #devImg img, html body > main .projects .card-pro > article > img, html body > main > .mentions .card-mentions > article > img, html body > main > .mentions .card-mentions {
+  height: auto;
+}
+
+html body > header > .navigation ul, html body > main .projects .card-pro > article > img, html body > main > .mentions .card-mentions > article > img, html body > main #formulaire {
+  width: 100%;
+}
+
+html body > header > .navigation ul, html body > main > .container, html body > main .projects .card-pro img, html body > main > .mentions .card-mentions img {
+  padding: 0;
+}
+
 html {
   background-image: url(/assets/imgs/fond.jpg);
   background-attachment: fixed;
@@ -18,28 +73,20 @@ html body {
   font-family: "Josefin", "sans-serif";
   background-color: rgba(255, 255, 255, 0.85);
   margin: 0em 15em 0em 15em;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
 }
 html body > header > .navigation {
   margin-top: 0.5em;
 }
 html body > header > .navigation ul {
-  list-style: none;
-  display: flex;
   flex-direction: row;
   margin: 0;
-  padding: 0;
-  width: 100%;
 }
 html body > header > .navigation ul > li {
-  text-decoration: none;
   margin-top: 0.5em;
   padding: 0.5em 1em 0.5em 1em;
 }
 html body > header > .navigation ul > li > a {
-  text-decoration: none;
   color: rgb(36, 36, 36);
 }
 html body > header > .navigation ul > li > a:hover {
@@ -55,33 +102,23 @@ html body > header > .navigation ul > li:hover {
 html body > main {
   padding-top: 1em;
 }
-html body > main > .container {
-  padding: 0;
-}
 html body > main > .container > #home div h1 {
   font-size: 12.3em;
   font-family: "Italiana", "sans-serif";
 }
 html body > main > .container > #home #devImg img {
   width: 35%;
-  height: auto;
 }
 html body > main > .container > #home p {
   margin: 0.5em;
-  margin-top: 2em;
   margin-bottom: 2em;
   font-size: 22px;
-  text-align: justify;
-}
-html body > main > .container > #home .cardsHome {
-  text-align: center;
 }
 html body > main > .container > #home .cardsHome .card-home button {
   border: none;
   background-color: transparent;
 }
 html body > main > .container > #home .cardsHome .card-home button div {
-  display: flex;
   justify-content: center;
 }
 html body > main > .container > #home .cardsHome .card-home button div h2 {
@@ -90,7 +127,6 @@ html body > main > .container > #home .cardsHome .card-home button div h2 {
   background-color: rgba(128, 128, 128, 0.8);
   background-image: linear-gradient(45deg, #de4269, #0bdfe0);
   padding: 0.5em 1em 0.5em 1em;
-  border-radius: 25px;
 }
 html body > main > .container > #home .cardsHome .card-home img {
   -o-object-fit: cover;
@@ -98,129 +134,61 @@ html body > main > .container > #home .cardsHome .card-home img {
   width: 20em;
   height: 20em;
   border: solid 7px rgba(128, 128, 128, 0.3);
-  border-radius: 25px;
-}
-html body > main .projects h1 {
-  text-align: center;
-  font-size: 9em;
 }
 html body > main .projects #filterbar {
-  text-align: center;
   margin-bottom: 1em;
 }
 html body > main .projects #filterbar > input {
-  border-radius: 12px;
   padding: 5px;
   width: 20em;
 }
 html body > main .projects .card-pro {
   background-color: white;
-  border-radius: 12px;
   box-shadow: 10px 10px 5px rgb(173, 173, 173);
   padding-top: 0.5em;
   margin: 0.5em;
   width: 25em;
   height: 32em;
-}
-html body > main .projects .card-pro img {
-  padding: 0;
 }
 html body > main .projects .card-pro footer {
   padding: 0.5em;
 }
 html body > main .projects .card-pro > header > h4 {
-  text-align: center;
   font-size: 30px;
-}
-html body > main .projects .card-pro > article > img {
-  width: 100%;
-  height: auto;
-}
-html body > main .resume {
-  margin-top: 2em;
-}
-html body > main .resume h1 {
-  text-align: center;
-  font-size: 9em;
-}
-html body > main .resume .cv {
-  display: flex;
-  flex-direction: column;
 }
 html body > main .resume p {
   line-height: 1.5em;
-  text-align: justify;
   font-size: 1.4em;
-}
-html body > main > .mentions > p {
-  text-align: center;
 }
 html body > main > .mentions .card-mentions {
   background-color: white;
-  border-radius: 12px;
   box-shadow: 10px 10px 5px rgb(173, 173, 173);
   padding-top: 0.5em;
   margin: 0.5em;
   width: 25em;
   height: 32em;
-  height: auto;
   padding: 1em;
-}
-html body > main > .mentions .card-mentions img {
-  padding: 0;
 }
 html body > main > .mentions .card-mentions footer {
   padding: 0.5em;
 }
 html body > main > .mentions .card-mentions > header > h4 {
-  text-align: center;
   font-size: 30px;
 }
-html body > main > .mentions .card-mentions > article > img {
-  width: 100%;
-  height: auto;
-}
-html body > main > .mentions h1 {
-  text-align: center;
-  font-size: 9em;
-}
-html body > main #formulaire {
-  text-align: center;
-  width: 100%;
-}
 html body > main #formulaire input {
-  text-align: center;
   width: 50%;
   padding: 0.3em;
-  border-radius: 12px;
   border: solid 2px #6c125c;
-}
-html body > main #formulaire input:focus {
-  outline: solid 2px #de4269;
-  background-color: lightcyan;
 }
 html body > main #formulaire textarea {
-  text-align: center;
   width: 50%;
   padding: 0.3em;
-  border-radius: 12px;
   border: solid 2px #6c125c;
-}
-html body > main #formulaire textarea:focus {
-  outline: solid 2px #de4269;
-  background-color: lightcyan;
-}
-html body > main #formulaire #btnForm {
-  border-radius: 12px;
-}
-html body > main #formulaire #btnForm:focus {
-  outline: solid 5px #de4269;
 }
 html body > main #formulaire #infoContact {
   margin-top: 5em;
 }
 html body > main #formulaire a {
-  text-decoration: none;
   color: black;
 }
 html body > main #formulaire a:hover {

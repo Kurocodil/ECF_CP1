@@ -14,9 +14,8 @@ html{
     body{
         font-family: t.$texte;
         background-color: rgb(255, 255, 255,0.85);
-        margin:0em 15em 0em 15em;
-        display: flex;
-        flex-direction: column;
+        margin: 0em 15em 0em 15em;
+        @extend %disFlexCol;
         min-height: 100vh;
         >header{
             >.navigation{
@@ -25,9 +24,9 @@ html{
             }
         }
         >main{
-            padding-top:1em;
+            padding-top: 1em;
             >.container{
-                padding:0;
+                @extend %pad0;
                 // Mise en page Accueil
                 >#home{
                     div{
@@ -39,20 +38,20 @@ html{
                     #devImg{
                         img{
                             width: 35%;
-                            height: auto;
+                            @extend %autoHeight;
                         }
                     }
                     // texte
                     p{
-                        margin:0.5em;
-                        margin-top:2em;
-                        margin-bottom:2em;
+                        margin: 0.5em;
+                        @extend %margTop2;
+                        margin-bottom: 2em;
                         font-size: 22px;
-                        text-align: justify;
+                        @extend %testJustify;
                     }
                     // Carte d'accueil
                     .cardsHome{
-                        text-align: center;
+                        @extend %textCenter;
                         .card-home{
                             @include m.carteHome;
                         }
@@ -62,15 +61,15 @@ html{
             // Mise ne page projet
             .projects{
                 h1{
-                    text-align: center;
-                    font-size: 9em;
+                    @extend %textCenter;
+                    @extend %fontSize9;
                 }
                 #filterbar{
-                    text-align: center;
-                    margin-bottom:1em;
+                    @extend %textCenter;
+                    margin-bottom: 1em;
                     >input{
-                        border-radius: 12px;
-                        padding:5px;
+                        @extend %radius12;
+                        padding: 5px;
                         width: 20em;
                     }
                 }
@@ -81,39 +80,37 @@ html{
             // Mise en page CV
             .resume{
                 h1{
-                    text-align: center;
-                    font-size: 9em;
+                    @extend %textCenter;
+                    @extend %fontSize9;
                 }
-                margin-top:2em;
                 .cv{
-                    display:flex;
-                    flex-direction: column;
+                    @extend %disFlexCol;
                 }
                 p{
                     line-height: 1.5em;
-                    text-align: justify;
+                    @extend %testJustify;
                     font-size: 1.4em;
                 }
             }
             // Mise en page Mentions Légales
             >.mentions{
                 >p{
-                    text-align: center;
+                    @extend %textCenter;
                 }
                 .card-mentions{
                     @include m.cardPro;
-                    height: auto;
-                    padding:1em;
+                    @extend %autoHeight;
+                    padding: 1em;
                 } 
                 h1{
-                    text-align: center;
-                    font-size: 9em;
+                    @extend %textCenter;
+                    @extend %fontSize9;
                 }     
             }
             // Mise en page Contact
             #formulaire{
-                text-align: center;
-                width: 100%;
+                @extend %textCenter;
+                @extend %width100;
                 input{
                     @include m.inputArea;
                 }
@@ -121,16 +118,14 @@ html{
                     @include m.inputArea;
                 }
                 #btnForm{
-                    border-radius:12px;
-                    &:focus{
-                        outline:solid 5px map-get(c.$colors,rose);
-                    }
+                    @extend %radius12;
+                    @extend %focusArea;
                 }
                 #infoContact{
                     margin-top:5em;
                 }
                 a{
-                    text-decoration: none;
+                    @extend %noDeco;
                     color:black;
                     &:hover{
                         color: map-get(c.$colors, rose)
@@ -139,18 +134,18 @@ html{
             }
         }
         footer{
-            margin-top:auto;
+            margin-top: auto;
         }
     }
 }
 
 @media screen and (max-width : 1024px){
     html > body{
-        margin:0;
+        margin: 0;
         main{
             #resume{
                 .row{
-                    flex-direction:column;
+                    flex-direction: column;
                 }
             }
         }
