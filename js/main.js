@@ -34,7 +34,7 @@ function navFunction() {
             break;  
         case '#resume':                                                             // Affichage Page Resume
             resume.innerHTML=`<div class="resume page">
-            <h1 class="fade-down">CV</h1>
+            <h1 class="fade-left">CV</h1>
             <div class="row">
                 <div class="col-lg">
                     <div class="fade-right cv">
@@ -67,7 +67,7 @@ function navFunction() {
             break;
         case '#projects':                                                           // Affichage Page Projects
             projects.innerHTML=`<div class="projects page">
-    <h1 class="fade-down">Projets</h1>
+    <h1 class="fade-right">Projets</h1>
     <div id="filterbar" class="Spawn">
         <input type="text" id="filter" placeholder="Nom du projet" onkeyup="filterbar()">
     </div>
