@@ -6,11 +6,14 @@
 @use '_mixins.scss'   as m;
 @use '_keyframes.scss' as k;
 
+// HTML
 html{
     background-image: url(/assets/imgs/fond.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: none;
+    // BODY
+    // SCSS Dynamique
     body{
         font-family: t.$texte;
         background-color: rgb(255, 255, 255,0.85);
@@ -23,13 +26,16 @@ html{
                 @include m.navigation_bar;
             }
         }
+        // MAIN
         >main{
             padding-top: 1em;
             display:flex;
             justify-content: center;
+            // CONTAINER
             >.container{
                 @extend %pad0;
                 margin:0;
+                // PAGE HOME
                 >#home{
                     div{
                         h1{
@@ -61,7 +67,7 @@ html{
                     }
                 }
             }
-            // Mise ne page projet
+            // Mise en page projet
             .projects{
                 h1{
                     @extend %textCenter;
@@ -74,6 +80,7 @@ html{
                         @extend %radius12;
                         padding: 5px;
                         width: 20em;
+                        @extend %focusArea;
                     }
                 }
                 .card-pro{
@@ -89,6 +96,7 @@ html{
                 }
                 .cv{
                     @extend %disFlexCol;
+
                 }
                 p{
                     line-height: 1.5em;
@@ -125,7 +133,7 @@ html{
                 textarea{
                     @include m.inputArea;
                 }
-                .btnForm{
+                #btnForm{
                     @extend %radius12;
                     @extend %focusArea;
                 }
@@ -148,12 +156,16 @@ html{
                 }
             }
         }
+        // Footer
         footer{
             margin-top: auto;
+            text-align: center;
+            padding-top:1em;
         }
     }
 }
 
+// Media Queries
 @media screen and (min-width:430px) and (max-width : 1024px){
     html > body{
         margin: 0;

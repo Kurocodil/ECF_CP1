@@ -53,21 +53,21 @@
         <tr>
             <td>Remplissage README</td>
             <td>Faible</td>
-            <td>En cours</td>
+            <td>Fait</td>
             <td>2</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Remplissage Backlog</td>
             <td>Faible</td>
-            <td>En cours</td>
+            <td>Fait</td>
             <td>2</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Remplissage User Stories</td>
             <td>Faible</td>
-            <td>En cours</td>
+            <td>Fait</td>
             <td>2</td>
             <td>Mathéo</td>
         </tr>
@@ -81,7 +81,7 @@
         <tr>
             <td>Finition de la gestion de projet</td>
             <td>Elevé</td>
-            <td>En cours</td>
+            <td>Fait</td>
             <td>3</td>
             <td>Mathéo</td>
         </tr>
@@ -144,84 +144,84 @@
         <tr>
             <td>Navigation indépendante -> dynamique</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>6</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Mise en page de la page d'accueil</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>7</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Mise en page de la page réalisation</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>7</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Mise en page de la page cv</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>7</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Mise en page de la page contact</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>7</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Mise en page de la page mentions</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>7</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Mise en place Responsive</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>7</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Mise en place Extends</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>7</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Réflexion fonctionnalité JavaScript</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>8</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Pseudo-code JavaScript</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>8</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Implémentation JavaScript</td>
             <td>Elevé</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>8</td>
             <td>Mathéo</td>
         </tr>
         <tr>
             <td>Animation</td>
             <td>Moyen</td>
-            <td>Pas commencé</td>
+            <td>Fait</td>
             <td>9</td>
             <td>Mathéo</td>
         </tr>

@@ -2,7 +2,7 @@
 function hidePages(){
     let pages = document.querySelectorAll('.page');                                 // Tableau de toutes les pages
     pages.forEach(page =>{                                                          // Pour chaque page, les faire disparaitre
-        page.style.display='none';
+        page.style.display='none';                                                  // Cacher la page
     })
 }
 // Fonction navigation
@@ -23,8 +23,8 @@ function navFunction() {
                 </div>
                 <p class="Spawn">
                     Passionné depuis plusieurs années par le développement web, 
-                    je me suis orienté vers une formation de DWWM et suis ainsi devenu apprenti développeur en Full-stack. J’ai à l’heure actuelle, bien 
-                    plus d’appétence pour la partie Front-end de la création de site, mais n’en reste pas moins curieux, 
+                    je me suis orienté vers une formation de <strong>DWWM</strong> et suis ainsi devenu apprenti développeur en <strong>Full-stack</strong>. J’ai à l’heure actuelle, bien 
+                    plus d’appétence pour la partie <strong>Front-end</strong> de la création de site, mais n’en reste pas moins curieux, 
                     et motivé par le côté Back-end de la programmation. En terme de design j'aime ce qui est coloré, tout en restant sobre.
                 </p>
                 <div class="row cardsHome">
@@ -56,7 +56,7 @@ function navFunction() {
             <h1 class="fade-down">CV</h1>
             <div class="row">
                 <div class="col-lg">
-                    <div class="cv fade-right">
+                    <div class="fade-right cv">
                         <img src="assets/imgs/cv_img.PNG" alt="CV">
                     </div>
                 </div>
