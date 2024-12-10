@@ -3,41 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil</title>
+    <title>Portfolio</title>
 
     <!-- Implémentation du CSS -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/frameworks/bootstrap.min.css">
     <link rel="stylesheet" href="css/frameworks/fontawesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/zoning.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="css/zoning.css"> -->
 </head>
 
 <body>
-    <!-- Header Body -->
+    <!-- Header -->
     <header>
-        <div class="Navigation">
-
+        <!-- Navigation -->
+        <div class="navigation">
+            <nav>
+                <ul>
+                  <li class="grow"><a href="#home"><i class="fa-solid fa-house"> |</i> Accueil</i></a></li>
+                  <li class="grow"><a href="#resume"><i class="fa-solid fa-book"> |</i> Cv</a></li>
+                  <li class="grow"><a href="#projects"><i class="fa-solid fa-bars-progress"> |</i> Projets</a></li>
+                  <li class="grow"><a href="includes/contact.html"><i class="fa-solid fa-address-book"> |</i> Contact</a></li>
+                  <li class="grow"><a href="includes/mentions.html"><i class="fa-solid fa-scale-unbalanced-flip"> |</i> Mentions Légales</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-
-    <!-- Main Body -->
+    <!-- Main  -->
     <main>
-        <div class="container">
-
+        <!-- Block des pages JavaScript -->
+        <div class="container container-fluid dyna">
+            <div id="home"></div>
+            <div id="resume"></div>
+            <div id="projects"></div>
         </div>
+
     </main>
 
-    <!-- Footer Body -->
+    <!-- Footer -->
     <footer>
-        <div class="Navigation">
-            
-        </div>
+        <!-- Copyright -->
+        <p>&copy; Copyright - Kuroco's Inc.</p>
     </footer>
-
     <!-- Implémentation du JavaScript  -->
-    <script src="js/frameworks/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

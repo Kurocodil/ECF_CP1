@@ -1,0 +1,251 @@
+// Import SCSS
+@use "sass:map";
+@use '_colors.scss'  as c;
+@use '_typo.scss'    as t;
+@use '_extends.scss';
+@use '_mixins.scss'   as m;
+@use '_keyframes.scss' as k;
+
+// HTML
+html{
+    background-image: url(../assets/imgs/fond.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: none;
+    // BODY
+    // SCSS Dynamique
+    body{
+        font-family: t.$texte;
+        background-color: rgb(255, 255, 255,0.85);
+        margin: 0em 15em 0em 15em;
+        @extend %disFlexCol;
+        min-height: 100vh;
+        >header{
+            >.navigation{
+                margin-top:0.5em;
+                @include m.navigation_bar;
+            }
+        }
+        // MAIN
+        >main{
+            padding-top: 1em;
+            display:flex;
+            justify-content: center;
+            // CONTAINER
+            >.container{
+                @extend %pad0;
+                margin:0;
+                // PAGE HOME
+                >#home{
+                    div{
+                        h1{
+                            font-size: 12.3em;
+                            font-family: t.$titre;
+                            @extend %textCenter;
+                        }
+                    }
+                    #devImg{
+                        img{
+                            width: 35%;
+                            @extend %autoHeight;
+                        }
+                    }
+                    // texte
+                    p{
+                        margin: 0.5em;
+                        @extend %margTop2;
+                        margin-bottom: 2em;
+                        font-size: 22px;
+                        @extend %testJustify;
+                    }
+                    .gitProfilePicture{
+                        width: 100%;
+                        @extend %height20;
+                        border-radius: 50%;
+                        @extend %textCenter;
+                        >img{
+                            object-fit: cover;
+                            width: 20em;
+                            @extend %height20;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+            // Mise en page projet
+            .projects{
+                h1{
+                    @extend %textCenter;
+                    @extend %fontSize9;
+                }
+                #filterbar{
+                    @extend %textCenter;
+                    margin-bottom: 1em;
+                    >input{
+                        @extend %radius12;
+                        padding: 5px;
+                        width: 20em;
+                        @extend %focusArea;
+                    }
+                }
+                .card-pro{
+                    @include m.cardPro;
+                    height: 32em;
+                }
+            }
+            // Mise en page CV
+            .resume{
+                h1{
+                    @extend %textCenter;
+                    @extend %fontSize9;
+                }
+                .cv{
+                    @extend %disFlexCol;
+
+                }
+                p{
+                    line-height: 1.5em;
+                    @extend %testJustify;
+                    font-size: 1.4em;
+                }
+            }
+            // Mise en page Mentions Légales
+            >.mentions{
+                >p{
+                    @extend %textCenter;
+                }
+                .card-mentions{
+                    @include m.cardPro;
+                    @extend %autoHeight;
+                    padding: 1em;
+                } 
+                h1{
+                    @extend %textCenter;
+                    @extend %fontSize9;
+                }     
+            }
+            // Mise en page Contact
+            #formulaire{
+                @extend %textCenter;
+                @extend %width100;
+                h1{
+                    @extend %textCenter;
+                    @extend %fontSize9;
+                }
+                input{
+                    @include m.inputArea;
+                }
+                textarea{
+                    @include m.inputArea;
+                }
+                #btnForm{
+                    @extend %radius12;
+                    @extend %focusArea;
+                }
+                #infoContact{
+                    margin-top:5em;
+                }
+                a{
+                    @extend %noDeco;
+                    color:black;
+                    &:hover{
+                        color: map-get(c.$colors, rose)
+                    }
+                }
+                .modal-container{
+                    display:none;
+                    @extend %radius12;
+                }
+                .modal-container.active{
+                    display:block;
+                }
+            }
+        }
+        // Footer
+        footer{
+            margin-top: auto;
+            @extend %textCenter;
+            padding-top:1em;
+        }
+    }
+}
+
+// Media Queries
+@media screen and (min-width:430px) and (max-width : 1024px){
+    html > body{
+        margin: 0;
+        main{
+            #home{
+                h1{
+                    font-size: 8em !important ;
+                }
+            }
+            #resume{
+                .row{
+                    flex-direction: column;
+                }
+                h1{
+                    font-size: 7em;
+                }
+            }
+            #projects{
+                .projects{
+                    width: 100%;
+                }
+            }
+            #formulaire{
+                h1{
+                    @extend %m_md_fontSize5;
+                }
+            }
+            .mentions{
+                h1{
+                    @extend %m_md_fontSize5;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 430px){
+    html{
+        >body{
+            >header{
+                .navigation ul{
+                    flex-direction:column;
+                    text-align: center;
+                }
+            }
+            margin: 0;
+            main{
+                #home{
+                    h1{
+                        font-size: 5em !important;
+                    }
+                }
+                #resume{
+                    padding:0em 0.5em 0em 0.5em;
+                    h1{
+                        @extend %m_xs_fontSize5;
+                    }
+                }
+                #projects{
+                    h1{
+                        @extend %m_xs_fontSize5;
+                    }
+                    
+                }
+                #formulaire{
+                    h1{
+                        @extend %m_xs_fontSize3;
+                    }
+                }
+                .mentions{
+                    h1{
+                        @extend %m_xs_fontSize3;
+                    }
+                }
+            }
+        }
+    } 
+}

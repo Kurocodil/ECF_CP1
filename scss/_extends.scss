@@ -1,0 +1,99 @@
+// Import des fichiers SCSS
+@use "sass:map";
+@use '_colors.scss'  as c;
+@use '_keyframes.scss' as k;
+
+// Gestion focus input/bouton
+%focusArea{
+    &:focus{
+        outline:solid 2px map-get(c.$colors,rose);
+        background-color: lightcyan;
+        border-radius:12px;
+    }
+}
+
+// Border Radius 12px
+%radius12{
+    border-radius: 12px;
+}
+
+// Border Radius 25px
+%radius25{
+    border-radius: 25px;
+}
+
+// Display Flex Column
+%disFlexCol{
+    display:flex;
+    flex-direction: column;
+}
+
+// Text center
+%textCenter{
+    text-align: center;
+}
+
+// Aucune déco
+%noDeco{
+    text-decoration: none;
+    list-style: none;
+}
+
+//  Flex
+%flex{
+    display:flex;
+}
+
+// Font 9em
+%fontSize9{
+    font-size: 9em;
+}
+
+//  Margin Top 2em
+%margTop2{
+    margin-top:2em;
+}
+
+// Justify align
+%testJustify{
+    text-align: justify;
+}
+
+//  Auto height
+%autoHeight{
+    height: auto;
+}
+
+// Width 100
+%width100{
+    width: 100%;
+}
+
+// No padding
+%pad0{
+    padding:0;
+}
+
+%height20{
+    height: 20em;
+}
+
+// Media Screen
+@media screen and (min-width:430px) and (max-width : 1024px){
+    // Font 5em
+    %m_md_fontSize5{
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width: 430px){
+    // Font 5em
+    %m_xs_fontSize5{
+        font-size: 5em;
+    }
+
+    // Font 3em
+    %m_xs_fontSize3{
+        font-size: 3em;
+    }
+}

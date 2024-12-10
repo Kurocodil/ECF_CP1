@@ -1,0 +1,173 @@
+@use '_colors' as c;
+
+// Slide descendant 
+@keyframes fadeDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+// Classe Slide descendant
+.fade-down {
+    animation: fadeDown 1s ease-in-out;
+}
+
+// Slide montant 
+@keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+// Classe slide montant
+.fade-up {
+    animation: fadeUp 1s ease-in-out;
+}
+
+// Slide vers la droite
+@keyframes fadeRight {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+// Classe slide a droite
+.fade-right {
+    animation: fadeRight 1s ease-in-out;
+}
+
+// Slide vers la gauche
+@keyframes fadeLeft {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+// Classe sldie a gauche
+.fade-left {
+    animation: fadeLeft 1s ease-in-out;
+}
+
+// Slide vers la gauche de loin
+@keyframes FadeFarLeft {
+    from {
+      opacity: 0;
+      transform: translateX(275px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+// Classe side a gauche loin
+.fade-far-left {
+    animation: FadeFarLeft 1s ease-in-out;
+}
+// Apparition
+@keyframes Spawn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+// Classe apparition
+.Spawn {
+    animation: Spawn 1.5s ease-in-out;
+}
+
+// flashing
+@keyframes flashing{
+  0%{
+    color:black;
+  }
+  50%{
+    color: map-get(c.$colors, rose);
+    font-weight: bold;
+  }
+  100%{
+    color:black;
+  }
+}
+// Classe flashing
+.flashing{
+  animation : flashing 5s infinite ease;
+}
+
+// hover Grow
+.grow { 
+  transition: all 0.2s ease-in-out;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+// ANIMATION Couleur 
+// Gradient Border
+@keyframes gradientBorder{
+  0%{
+    border-image: linear-gradient(0deg,pink,purple);
+    border-image-slice:1;
+  }
+  10%{
+    border-image: linear-gradient(36deg,pink,purple);
+    border-image-slice:1;
+  }
+  20%{
+    border-image: linear-gradient(72deg,pink,purple);
+    border-image-slice:1;
+  }
+  30%{
+    border-image: linear-gradient(108deg,pink,purple);
+    border-image-slice:1;
+  }
+  40%{
+    border-image: linear-gradient(144deg,pink,purple);
+    border-image-slice:1;
+  }
+  50%{
+    border-image: linear-gradient(180deg,pink,purple);
+    border-image-slice:1;
+  }
+  60%{
+    border-image: linear-gradient(216deg,pink,purple);
+    border-image-slice:1;
+  }
+  70%{
+    border-image: linear-gradient(252deg,pink,purple);
+    border-image-slice:1;
+  }
+  80%{
+    border-image: linear-gradient(288deg,pink,purple);
+    border-image-slice:1;
+  }
+  90%{
+    border-image: linear-gradient(324deg,pink,purple);
+    border-image-slice:1;
+  }
+  100%{
+    border-image: linear-gradient(360deg,pink,purple);
+    border-image-slice:1;
+  }
+}
+// Classe animation couleur
+.gradient-border{
+  animation : gradientBorder 5s infinite ease;
+}

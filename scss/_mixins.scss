@@ -1,0 +1,78 @@
+// Imports SCSS
+@use "sass:map";
+@use '_colors.scss'  as c;
+
+// Block Navigation
+@mixin navigation_bar{
+    ul{
+        @extend %noDeco;
+        @extend %flex;
+        flex-direction: row;
+        margin: 0;
+        @extend %pad0;
+        @extend %width100;
+        >li{
+            @extend %noDeco;
+            margin-top: 0.5em;
+            padding: 0.5em 0.5em 0.5em 0.5em;
+            >a{
+                @extend %noDeco;
+                color:rgb(36, 36, 36);
+                padding:0.6em;
+                &:hover{
+                    transition: all ease 0.5s;
+                    background-color: rgba(166, 139, 241, 0.4);
+                    border-radius: 10px 5px 5px;
+                    color:rgb(255, 13, 215);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+// Carte accueil
+@mixin carteHome{
+    border:solid 2px black;
+    width: 10em;
+    height: 10em;
+}
+
+// Carte projects
+@mixin cardPro(){
+    background-color: white;
+    @extend %radius12;
+    box-shadow: 10px 10px 5px rgb(173, 173, 173);
+    padding-top: 0.5em;
+    margin: 0.5em;
+    width: 100%;
+    img{
+        @extend %pad0;
+    }
+    
+    footer{
+        padding: 0.5em;
+    }
+    >header{
+        >h4{
+            @extend %textCenter;
+            font-size: 30px;
+        }
+    }
+    >article{
+        >img{
+            @extend %width100;
+            @extend %autoHeight;
+        }
+    }
+}
+
+// Block input
+@mixin inputArea{
+    @extend %textCenter;
+    width: 50%;
+    padding: 0.3em;
+    @extend %radius12;
+    border:solid 2px map-get(c.$colors,_violet);
+    @extend %focusArea;
+}

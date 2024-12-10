@@ -1,0 +1,17 @@
+// Font Titre
+@font-face {
+    font-family: 'Italiana';
+    src: url('../fonts/Italiana-Regular.ttf');
+    font-style: normal;
+}
+// Variable Typo Titre
+$titre : "Italiana", "sans-serif";
+
+// Font texte
+@font-face{
+    font-family: 'Josefin';
+    src: url('../fonts/JosefinSans-VariableFont_wght.ttf');
+    font-style:normal;
+}
+// Variable Typo Text
+$texte : 'Josefin', 'sans-serif';
