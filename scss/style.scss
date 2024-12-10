@@ -239,18 +239,18 @@ html{
             }
             margin: 0;
             main{
-                #home{
+                #container-home{
                     h1{
                         font-size: 5em !important;
                     }
                 }
-                #resume{
+                #container-resume{
                     padding:0em 0.5em 0em 0.5em;
                     h1{
                         @extend %m_xs_fontSize5;
                     }
                 }
-                #projects{
+                #container-projects{
                     h1{
                         @extend %m_xs_fontSize5;
                     }
