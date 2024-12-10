@@ -36,7 +36,7 @@ html{
                 @extend %pad0;
                 margin:0;
                 // PAGE HOME
-                >#home{
+                >#container-home{
                     div{
                         h1{
                             font-size: 12.3em;
@@ -82,6 +82,7 @@ html{
                     @extend %textCenter;
                     margin-bottom: 1em;
                     >input{
+                        border:solid 2px map-get(c.$colors,_violet);
                         @extend %radius12;
                         padding: 5px;
                         width: 20em;
@@ -132,32 +133,52 @@ html{
                     @extend %textCenter;
                     @extend %fontSize9;
                 }
-                input{
-                    @include m.inputArea;
-                }
-                textarea{
-                    @include m.inputArea;
-                }
-                #btnForm{
-                    @extend %radius12;
-                    @extend %focusArea;
-                }
-                #infoContact{
-                    margin-top:5em;
-                }
-                a{
-                    @extend %noDeco;
-                    color:black;
-                    &:hover{
-                        color: map-get(c.$colors, rose)
+                >.formulaire{
+                    input{
+                        @include m.inputArea;
+                    }
+                    textarea{
+                        @include m.inputArea;
+                    }
+                    #btnForm{
+                        @extend %radius12;
+                        @extend %focusArea;
+                        padding:0.4em;
+                        margin:0.5em 0em 1em 0em;
+                        border:solid 2px map.get(c.$colors ,_violet);
                     }
                 }
-                .modal-container{
+                // Modale
+                #modal{
                     display:none;
-                    @extend %radius12;
+                    position:absolute;
+                    left:50%;
+                    top:45%;
+                    transform: translate(-50%,-50%);
+                    background-color: rgb(236, 236, 236);
+                    border:solid 3px  black;
+                    border-image: linear-gradient(0deg,pink,purple);
+                    border-image-slice: 1;
+                    width: 20em;
+                    text-align: center;
+                    .modal-contents{
+                        padding:1em;
+                        .modalBtn{
+                            border:solid 2px black;
+                            border-radius:8px;
+                            margin:0.5em;
+                            padding:0.3em;
+                            width: 5em;
+                            margin-bottom:0.7em;
+                        }
+                    }
+                    &.active{
+                        display:block;
+                    }
                 }
-                .modal-container.active{
-                    display:block;
+                // Informations contact
+                #infoContact{
+                    margin-top:5em;
                 }
             }
         }
@@ -175,12 +196,12 @@ html{
     html > body{
         margin: 0;
         main{
-            #home{
+            #container-home{
                 h1{
                     font-size: 8em !important ;
                 }
             }
-            #resume{
+            #container-resume{
                 .row{
                     flex-direction: column;
                 }
@@ -188,7 +209,7 @@ html{
                     font-size: 7em;
                 }
             }
-            #projects{
+            #container-projects{
                 .projects{
                     width: 100%;
                 }
