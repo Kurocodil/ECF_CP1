@@ -8,9 +8,9 @@ function hidePages(){
 // Fonction navigation
 function navFunction() {
     let urlSettings = window.location.hash || '#home';                              // récupérer le Lien actuel, sinon mettre #home
-    let resume = document.getElementById('resume');                                 // Récupération div CV
-    let projects = document.getElementById('projects');                             // Récupération div Projet
-    let home = document.getElementById('home');                                     // Récupération div accueil
+    let resume = document.getElementById('container-resume');                                 // Récupération div CV
+    let projects = document.getElementById('container-projects');                             // Récupération div Projet
+    let home = document.getElementById('container-home');                                     // Récupération div accueil
     hidePages();                                                                    // Cacher directement les pages a chaque fois
     switch (urlSettings) {                                                          // vérifie les correspondance du lien pour afficher dynamiquement l'html
         case '#home':                                                               // Affichage Page Home 
@@ -272,8 +272,10 @@ function navFunction() {
     window.addEventListener('DOMContentLoaded',navFunction);                        // Ecouteur qui une fois le DOM chargé, execute navFunction
     window.addEventListener('hashchange', navFunction);                             // Ecouteur qui execute navFunction après un changement de lien
 }
-navFunction();
-
+let urlActuel = window.location.hash;
+if (urlActuel == '#home' || urlActuel == '#resume' || urlActuel == '#projects'){
+    navFunction();
+}
 
 
 // Filtre projets
@@ -291,10 +293,21 @@ function filterbar(){
 }
 
 
-const modal = document.getElementById('modal');
+
+
+
+
+// FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE
+//clear input au chargement
 // Affichage modale
 function activeModal(){
-    modal.classList.toggle('active')
+    const modal = document.getElementById('modal');
+    modal.classList.add('active');
+}
+// Cacher modale
+function removeModal(){
+    const modal = document.getElementById('modal');
+    modal.classList.remove('active');
 }
 // Vérif forma de texte
 function dataForm(){
@@ -306,36 +319,61 @@ function dataForm(){
     const message = document.getElementById('message').value;   
     if (lastname == "" || lastname.length > 50){
         console.log("nom vide")
-        theError.textContent = "Erreur : le nom est obligatoire, maximum 50 caractères.";
+        theError.textContent = `Erreur : le nom est obligatoire, maximum 50 caractères.`;
+        theError.style.color="red";
         return false;
     }
     if (firstname == "" || firstname.length > 20){
         console.log("prenom vide")
         theError.textContent = "Erreur : le prénom est obligatoire, maximum 20 caractères.";
+        theError.style.color="red";
         return false;
     }
     if(!mail.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/)){
         console.log("mail invalide")
         theError.textContent = "Erreur: mail invalide";
+        theError.style.color="red";
         return false;
     }
     if (message ==""){
         console.log("message vide")
         theError.textContent = "Erreur : Vous devez écrire un message";
+        theError.style.color="red";
         return false;
     }
     return true
 }
+//Fonction d'appel pour formulaire
 const formBtn = document.getElementById('btnForm');
 formBtn.addEventListener('click', function(event) {
-    console.log("test")
     event.preventDefault();  // Empêche la soumission du formulaire
     let valide = dataForm();
-    console.log(valide);
     if (valide) {
         activeModal();  // Affiche la modale si les données sont valides
     }
 });
+
+//Bouton annuler
+const CancelModal = document.getElementById('close');
+CancelModal.addEventListener('click',() => {
+    removeModal()
+    document.querySelector('.formulaire').reset();
+
+})
+
+//Bouton Envoie
+const SubmitInfo = document.getElementById('submit');
+SubmitInfo.addEventListener('click', () =>{
+    // Pas de back-end : donc pas d'envoie de formulaire
+    // const formulaire = document.querySelector('.formulaire');
+    // formulaire.submit();
+    removeModal();
+    // sans le back : je reset formulaire
+    document.querySelector('.formulaire').reset();
+    const theError = document.getElementById('error-container');
+    theError.textContent = "Message envoyé avec succès";
+    theError.style.color="darkgreen";
+})
 
 
 

@@ -115,72 +115,72 @@
 
 @keyframes gradientBorder {
   0% {
-    -o-border-image: linear-gradient(0deg, pink, purple);
-       border-image: linear-gradient(0deg, pink, purple);
+    -o-border-image: linear-gradient(0deg, #de4269, purple);
+       border-image: linear-gradient(0deg, #de4269, purple);
     border-image-slice: 1;
   }
   10% {
-    -o-border-image: linear-gradient(36deg, pink, purple);
-       border-image: linear-gradient(36deg, pink, purple);
+    -o-border-image: linear-gradient(36deg, #de4269, purple);
+       border-image: linear-gradient(36deg, #de4269, purple);
     border-image-slice: 1;
   }
   20% {
-    -o-border-image: linear-gradient(72deg, pink, purple);
-       border-image: linear-gradient(72deg, pink, purple);
+    -o-border-image: linear-gradient(72deg, #de4269, purple);
+       border-image: linear-gradient(72deg, #de4269, purple);
     border-image-slice: 1;
   }
   30% {
-    -o-border-image: linear-gradient(108deg, pink, purple);
-       border-image: linear-gradient(108deg, pink, purple);
+    -o-border-image: linear-gradient(108deg, #de4269, purple);
+       border-image: linear-gradient(108deg, #de4269, purple);
     border-image-slice: 1;
   }
   40% {
-    -o-border-image: linear-gradient(144deg, pink, purple);
-       border-image: linear-gradient(144deg, pink, purple);
+    -o-border-image: linear-gradient(144deg, #de4269, purple);
+       border-image: linear-gradient(144deg, #de4269, purple);
     border-image-slice: 1;
   }
   50% {
-    -o-border-image: linear-gradient(180deg, pink, purple);
-       border-image: linear-gradient(180deg, pink, purple);
+    -o-border-image: linear-gradient(180deg, #de4269, purple);
+       border-image: linear-gradient(180deg, #de4269, purple);
     border-image-slice: 1;
   }
   60% {
-    -o-border-image: linear-gradient(216deg, pink, purple);
-       border-image: linear-gradient(216deg, pink, purple);
+    -o-border-image: linear-gradient(216deg, #de4269, purple);
+       border-image: linear-gradient(216deg, #de4269, purple);
     border-image-slice: 1;
   }
   70% {
-    -o-border-image: linear-gradient(252deg, pink, purple);
-       border-image: linear-gradient(252deg, pink, purple);
+    -o-border-image: linear-gradient(252deg, #de4269, purple);
+       border-image: linear-gradient(252deg, #de4269, purple);
     border-image-slice: 1;
   }
   80% {
-    -o-border-image: linear-gradient(288deg, pink, purple);
-       border-image: linear-gradient(288deg, pink, purple);
+    -o-border-image: linear-gradient(288deg, #de4269, purple);
+       border-image: linear-gradient(288deg, #de4269, purple);
     border-image-slice: 1;
   }
   90% {
-    -o-border-image: linear-gradient(324deg, pink, purple);
-       border-image: linear-gradient(324deg, pink, purple);
+    -o-border-image: linear-gradient(324deg, #de4269, purple);
+       border-image: linear-gradient(324deg, #de4269, purple);
     border-image-slice: 1;
   }
   100% {
-    -o-border-image: linear-gradient(360deg, pink, purple);
-       border-image: linear-gradient(360deg, pink, purple);
+    -o-border-image: linear-gradient(360deg, #de4269, purple);
+       border-image: linear-gradient(360deg, #de4269, purple);
     border-image-slice: 1;
   }
 }
 .gradient-border {
-  animation: gradientBorder 5s infinite ease;
+  animation: gradientBorder 1s infinite ease-in-out;
 }
 
-html body > main .projects #filterbar > input:focus, html body > main #formulaire input:focus, html body > main #formulaire textarea:focus, html body > main #formulaire #btnForm:focus {
+html body > main .projects #filterbar > input:focus, html body > main #formulaire > .formulaire input:focus, html body > main #formulaire > .formulaire textarea:focus, html body > main #formulaire > .formulaire #btnForm:focus {
   outline: solid 2px #de4269;
   background-color: lightcyan;
   border-radius: 12px;
 }
 
-html body > main .projects #filterbar > input, html body > main .projects .card-pro, html body > main > .mentions .card-mentions, html body > main #formulaire input, html body > main #formulaire textarea, html body > main #formulaire #btnForm, html body > main #formulaire .modal-container {
+html body > main .projects #filterbar > input, html body > main .projects .card-pro, html body > main > .mentions .card-mentions, html body > main #formulaire > .formulaire input, html body > main #formulaire > .formulaire textarea, html body > main #formulaire > .formulaire #btnForm {
   border-radius: 12px;
 }
 
@@ -189,11 +189,11 @@ html body, html body > main .resume .cv {
   flex-direction: column;
 }
 
-html body > main > .container > #home div h1, html body > main > .container > #home .gitProfilePicture, html body > main .projects h1, html body > main .projects #filterbar, html body > main .projects .card-pro > header > h4, html body > main .resume h1, html body > main > .mentions > p, html body > main > .mentions .card-mentions > header > h4, html body > main > .mentions h1, html body > main #formulaire, html body > main #formulaire h1, html body > main #formulaire input, html body > main #formulaire textarea, html body footer {
+html body > main > .container > #container-home div h1, html body > main > .container > #container-home .gitProfilePicture, html body > main .projects h1, html body > main .projects #filterbar, html body > main .projects .card-pro > header > h4, html body > main .resume h1, html body > main > .mentions > p, html body > main > .mentions .card-mentions > header > h4, html body > main > .mentions h1, html body > main #formulaire, html body > main #formulaire h1, html body > main #formulaire > .formulaire input, html body > main #formulaire > .formulaire textarea, html body footer {
   text-align: center;
 }
 
-html body > header > .navigation ul, html body > header > .navigation ul > li, html body > header > .navigation ul > li > a, html body > main #formulaire a {
+html body > header > .navigation ul, html body > header > .navigation ul > li, html body > header > .navigation ul > li > a {
   text-decoration: none;
   list-style: none;
 }
@@ -206,15 +206,15 @@ html body > main .projects h1, html body > main .resume h1, html body > main > .
   font-size: 9em;
 }
 
-html body > main > .container > #home p {
+html body > main > .container > #container-home p {
   margin-top: 2em;
 }
 
-html body > main > .container > #home p, html body > main .resume p {
+html body > main > .container > #container-home p, html body > main .resume p {
   text-align: justify;
 }
 
-html body > main > .container > #home #devImg img, html body > main .projects .card-pro > article > img, html body > main > .mentions .card-mentions > article > img, html body > main > .mentions .card-mentions {
+html body > main > .container > #container-home #devImg img, html body > main .projects .card-pro > article > img, html body > main > .mentions .card-mentions > article > img, html body > main > .mentions .card-mentions {
   height: auto;
 }
 
@@ -226,7 +226,7 @@ html body > header > .navigation ul, html body > main > .container, html body > 
   padding: 0;
 }
 
-html body > main > .container > #home .gitProfilePicture, html body > main > .container > #home .gitProfilePicture > img {
+html body > main > .container > #container-home .gitProfilePicture, html body > main > .container > #container-home .gitProfilePicture > img {
   height: 20em;
 }
 
@@ -285,23 +285,23 @@ html body > main {
 html body > main > .container {
   margin: 0;
 }
-html body > main > .container > #home div h1 {
+html body > main > .container > #container-home div h1 {
   font-size: 12.3em;
   font-family: "Italiana", "sans-serif";
 }
-html body > main > .container > #home #devImg img {
+html body > main > .container > #container-home #devImg img {
   width: 35%;
 }
-html body > main > .container > #home p {
+html body > main > .container > #container-home p {
   margin: 0.5em;
   margin-bottom: 2em;
   font-size: 22px;
 }
-html body > main > .container > #home .gitProfilePicture {
+html body > main > .container > #container-home .gitProfilePicture {
   width: 100%;
   border-radius: 50%;
 }
-html body > main > .container > #home .gitProfilePicture > img {
+html body > main > .container > #container-home .gitProfilePicture > img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 20em;
@@ -311,6 +311,7 @@ html body > main .projects #filterbar {
   margin-bottom: 1em;
 }
 html body > main .projects #filterbar > input {
+  border: solid 2px #6c125c;
   padding: 5px;
   width: 20em;
 }
@@ -346,30 +347,51 @@ html body > main > .mentions .card-mentions footer {
 html body > main > .mentions .card-mentions > header > h4 {
   font-size: 30px;
 }
-html body > main #formulaire input {
+html body > main #formulaire > .formulaire input {
   width: 50%;
   padding: 0.3em;
   border: solid 2px #6c125c;
 }
-html body > main #formulaire textarea {
+html body > main #formulaire > .formulaire textarea {
   width: 50%;
   padding: 0.3em;
   border: solid 2px #6c125c;
+}
+html body > main #formulaire > .formulaire #btnForm {
+  padding: 0.4em;
+  margin: 0.5em 0em 1em 0em;
+  border: solid 2px #6c125c;
+}
+html body > main #formulaire #modal {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(236, 236, 236);
+  border: solid 3px black;
+  -o-border-image: linear-gradient(0deg, pink, purple);
+     border-image: linear-gradient(0deg, pink, purple);
+  border-image-slice: 1;
+  width: 20em;
+  text-align: center;
+}
+html body > main #formulaire #modal .modal-contents {
+  padding: 1em;
+}
+html body > main #formulaire #modal .modal-contents .modalBtn {
+  border: solid 2px black;
+  border-radius: 8px;
+  margin: 0.5em;
+  padding: 0.3em;
+  width: 5em;
+  margin-bottom: 0.7em;
+}
+html body > main #formulaire #modal.active {
+  display: block;
 }
 html body > main #formulaire #infoContact {
   margin-top: 5em;
-}
-html body > main #formulaire a {
-  color: black;
-}
-html body > main #formulaire a:hover {
-  color: #de4269;
-}
-html body > main #formulaire .modal-container {
-  display: none;
-}
-html body > main #formulaire .modal-container.active {
-  display: block;
 }
 html body footer {
   margin-top: auto;
@@ -380,16 +402,16 @@ html body footer {
   html > body {
     margin: 0;
   }
-  html > body main #home h1 {
+  html > body main #container-home h1 {
     font-size: 8em !important;
   }
-  html > body main #resume .row {
+  html > body main #container-resume .row {
     flex-direction: column;
   }
-  html > body main #resume h1 {
+  html > body main #container-resume h1 {
     font-size: 7em;
   }
-  html > body main #projects .projects {
+  html > body main #container-projects .projects {
     width: 100%;
   }
 }
