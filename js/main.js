@@ -8,9 +8,9 @@ function hidePages(){
 // Fonction navigation
 function navFunction() {
     let urlSettings = window.location.hash || '#home';                              // récupérer le Lien actuel, sinon mettre #home
-    let resume = document.getElementById('container-resume');                                 // Récupération div CV
-    let projects = document.getElementById('container-projects');                             // Récupération div Projet
-    let home = document.getElementById('container-home');                                     // Récupération div accueil
+    let resume = document.querySelector('#container-resume');                                 // Récupération div CV
+    let projects = document.querySelector('#container-projects');                             // Récupération div Projet
+    let home = document.querySelector('#container-home');                                     // Récupération div accueil
     hidePages();                                                                    // Cacher directement les pages a chaque fois
     switch (urlSettings) {                                                          // vérifie les correspondance du lien pour afficher dynamiquement l'html
         case '#home':                                                               // Affichage Page Home 
@@ -272,8 +272,8 @@ function navFunction() {
     window.addEventListener('DOMContentLoaded',navFunction);                        // Ecouteur qui une fois le DOM chargé, execute navFunction
     window.addEventListener('hashchange', navFunction);                             // Ecouteur qui execute navFunction après un changement de lien
 }
-let urlActuel = window.location.hash;
-if (urlActuel == '#home' || urlActuel == '#resume' || urlActuel == '#projects'){
+let urlActuel = window.location.href;
+if (!urlActuel.match(/\/(contact|mentions)\.html$/)){
     navFunction();
 }
 
@@ -345,35 +345,35 @@ function dataForm(){
 }
 //Fonction d'appel pour formulaire
 const formBtn = document.getElementById('btnForm');
-formBtn.addEventListener('click', function(event) {
-    event.preventDefault();  // Empêche la soumission du formulaire
-    let valide = dataForm();
-    if (valide) {
-        activeModal();  // Affiche la modale si les données sont valides
-    }
-});
+if (formBtn) {
+    formBtn.addEventListener('click', function(event) {
+        event.preventDefault();  // Empêche la soumission du formulaire
+        let valide = dataForm();
+        if (valide) {
+            activeModal();  // Affiche la modale si les données sont valides
+        }
+    });
+    //Bouton annuler
+    const CancelModal = document.getElementById('close');
+    CancelModal.addEventListener('click',() => {
+        removeModal()    
+    })
+    
+    //Bouton Envoie
+    const SubmitInfo = document.getElementById('submit');
+    SubmitInfo.addEventListener('click', () =>{
+        // Pas de back-end : donc pas d'envoie de formulaire
+        // const formulaire = document.querySelector('.formulaire');
+        // formulaire.submit();
+        removeModal();
+        // sans le back : je reset formulaire
+        document.querySelector('.formulaire').reset();
+        const theError = document.getElementById('error-container');
+        theError.textContent = "Message envoyé avec succès";
+        theError.style.color="darkgreen";
+    })
+}
 
-//Bouton annuler
-const CancelModal = document.getElementById('close');
-CancelModal.addEventListener('click',() => {
-    removeModal()
-    document.querySelector('.formulaire').reset();
-
-})
-
-//Bouton Envoie
-const SubmitInfo = document.getElementById('submit');
-SubmitInfo.addEventListener('click', () =>{
-    // Pas de back-end : donc pas d'envoie de formulaire
-    // const formulaire = document.querySelector('.formulaire');
-    // formulaire.submit();
-    removeModal();
-    // sans le back : je reset formulaire
-    document.querySelector('.formulaire').reset();
-    const theError = document.getElementById('error-container');
-    theError.textContent = "Message envoyé avec succès";
-    theError.style.color="darkgreen";
-})
 
 
 

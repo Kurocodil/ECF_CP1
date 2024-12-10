@@ -236,7 +236,7 @@ html body > main > .container > #container-home .gitProfilePicture, html body > 
   }
 }
 @media screen and (max-width: 430px) {
-  html > body main #resume h1, html > body main #projects h1 {
+  html > body main #container-resume h1, html > body main #container-projects h1 {
     font-size: 5em;
   }
   html > body main #formulaire h1, html > body main .mentions h1 {
@@ -423,10 +423,10 @@ html body footer {
     flex-direction: column;
     text-align: center;
   }
-  html > body main #home h1 {
+  html > body main #container-home h1 {
     font-size: 5em !important;
   }
-  html > body main #resume {
+  html > body main #container-resume {
     padding: 0em 0.5em 0em 0.5em;
   }
 }/*# sourceMappingURL=style.css.map */
