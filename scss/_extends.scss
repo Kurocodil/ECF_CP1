@@ -6,7 +6,7 @@
 // Gestion focus input/bouton
 %focusArea{
     &:focus{
-        outline:solid 2px map-get(c.$colors,rose);
+        outline:solid 2px c.$rose;
         background-color: lightcyan;
         border-radius:12px;
     }
