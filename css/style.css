@@ -491,6 +491,9 @@ html body footer {
     flex-direction: column;
     text-align: center;
   }
+  html > body > header .navigation .form-box .button-box {
+    margin-left: 39%;
+  }
   html > body main #container-home h1 {
     font-size: 5em !important;
   }
