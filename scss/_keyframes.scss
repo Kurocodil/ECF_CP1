@@ -33,6 +33,23 @@
     animation: fadeUp 1s ease-in-out;
 }
 
+// Infinite slide up
+@keyframes slideUpInf{
+  0%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(-10px);
+  }
+  100%{
+    transform:translateY(0);
+  }
+}
+// Classe fadeUpInf
+.fade-up-inf{
+  animation : slideUpInf 2s infinite ease;
+}
+
 // Slide vers la droite
 @keyframes fadeRight {
     from {
