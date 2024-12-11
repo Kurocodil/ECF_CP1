@@ -8,9 +8,9 @@ function hidePages(){
 // Fonction navigation
 function navFunction() {
     let urlSettings = window.location.hash || '#home';                              // récupérer le Lien actuel, sinon mettre #home
-    let resume = document.querySelector('#container-resume');                                 // Récupération div CV
-    let projects = document.querySelector('#container-projects');                             // Récupération div Projet
-    let home = document.querySelector('#container-home');                                     // Récupération div accueil
+    let resume = document.querySelector('#container-resume');                       // Récupération div CV
+    let projects = document.querySelector('#container-projects');                   // Récupération div Projet
+    let home = document.querySelector('#container-home');                           // Récupération div accueil
     hidePages();                                                                    // Cacher directement les pages a chaque fois
     switch (urlSettings) {                                                          // vérifie les correspondance du lien pour afficher dynamiquement l'html
         case '#home':                                                               // Affichage Page Home 
@@ -60,7 +60,7 @@ function navFunction() {
                         personnes, que ce soit pour échanger des idées ou collaborer. La persévérance sont des valeurs que je porte, 
                         car je crois que chaque effort mène à un résultat.
                     </p>
-                    <p class="Spawn"><strong>Vous pouvez télécharger le CV en cliquant ici <a href="assets/imgs/CV_matheo_siron_dwwm.pdf" target="_blank"><i class="fa-solid fa-download"></i></a></strong></p>
+                    <p class="Spawn"><strong>Vous pouvez télécharger le CV en cliquant ici <a href="assets/imgs/CV_matheo_siron_dwwm.pdf" target="_blank"><i class="fa-solid fa-download fade-up-inf"></i></a></strong></p>
                 </div>
             </div>
         </div>`
@@ -277,6 +277,29 @@ if (!urlActuel.match(/\/(contact|mentions)\.html$/)){
     navFunction();
 }
 
+//Mode sombre
+function LeftClick(){
+    let btn = document.getElementById('btn');
+    let moon = document.querySelector('.fa-moon');
+    let sun = document.querySelector('.fa-sun');
+    let body = document.querySelector('body');
+    sun.style.color='white';
+    btn.style.left='0px';
+    btn.style.background="#f0bc6f";
+    moon.style.color='black';
+    body.classList.remove('black');
+}
+function RightClick(){
+    let btn = document.getElementById('btn');
+    let moon = document.querySelector('.fa-moon');
+    let sun = document.querySelector('.fa-sun');
+    let body = document.querySelector('body');
+    btn.style.left='37px';
+    btn.style.background="#072846";
+    moon.style.color='white';
+    sun.style.color='black';
+    body.classList.add('black');
+}
 
 // Filtre projets
 function filterbar(){
