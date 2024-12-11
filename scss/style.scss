@@ -288,9 +288,16 @@ html{
     html{
         >body{
             >header{
-                .navigation ul{
-                    flex-direction:column;
-                    text-align: center;
+                .navigation{
+                    ul{
+                        flex-direction:column;
+                        text-align: center;
+                    }
+                    .form-box{
+                        .button-box{
+                            margin-left:39%;
+                        }
+                    }
                 }
             }
             margin: 0;
