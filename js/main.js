@@ -1,3 +1,6 @@
+
+// NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION
+
 // Fonction Désaffichage pages
 function hidePages(){
     let pages = document.querySelectorAll('.page');                                 // Tableau de toutes les pages
@@ -5,12 +8,12 @@ function hidePages(){
         page.style.display='none';                                                  // Cacher la page
     })
 }
-// Fonction navigation
+// Navigation des pages
 function navFunction() {
     let urlSettings = window.location.hash || '#home';                              // récupérer le Lien actuel, sinon mettre #home
-    let resume = document.querySelector('#container-resume');                                 // Récupération div CV
-    let projects = document.querySelector('#container-projects');                             // Récupération div Projet
-    let home = document.querySelector('#container-home');                                     // Récupération div accueil
+    let resume = document.querySelector('#container-resume');                       // Récupération div CV
+    let projects = document.querySelector('#container-projects');                   // Récupération div Projet
+    let home = document.querySelector('#container-home');                           // Récupération div accueil
     hidePages();                                                                    // Cacher directement les pages a chaque fois
     switch (urlSettings) {                                                          // vérifie les correspondance du lien pour afficher dynamiquement l'html
         case '#home':                                                               // Affichage Page Home 
@@ -60,7 +63,7 @@ function navFunction() {
                         personnes, que ce soit pour échanger des idées ou collaborer. La persévérance sont des valeurs que je porte, 
                         car je crois que chaque effort mène à un résultat.
                     </p>
-                    <p class="Spawn"><strong>Vous pouvez télécharger le CV en cliquant ici <a href="assets/imgs/CV_matheo_siron_dwwm.pdf" target="_blank"><i class="fa-solid fa-download"></i></a></strong></p>
+                    <p class="Spawn"><strong>Vous pouvez télécharger le CV en cliquant ici <a href="assets/imgs/CV_matheo_siron_dwwm.pdf" target="_blank"><i class="fa-solid fa-download fade-up-inf"></i></a></strong></p>
                 </div>
             </div>
         </div>`
@@ -272,13 +275,13 @@ function navFunction() {
     window.addEventListener('DOMContentLoaded',navFunction);                        // Ecouteur qui une fois le DOM chargé, execute navFunction
     window.addEventListener('hashchange', navFunction);                             // Ecouteur qui execute navFunction après un changement de lien
 }
+
 let urlActuel = window.location.href;
 if (!urlActuel.match(/\/(contact|mentions)\.html$/)){
     navFunction();
 }
 
-
-// Filtre projets
+// FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET
 function filterbar(){
     const Filtre = document.getElementById("filter").value.toLowerCase();           // Récupère l'entrée user en minuscule
     const Tab = document.querySelectorAll('.card-pro');                             // Créer un tableau de toutes les cartes
@@ -292,12 +295,52 @@ function filterbar(){
     })
 }
 
+// MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE
 
-
-
-
+// Vérification si le mode sombre est activé (pour le garder entre les pages)
+window.addEventListener('DOMContentLoaded',()=>{
+    const darkMode = localStorage.getItem('darkMode');
+    let btn = document.getElementById('btn');
+    let moon = document.querySelector('.fa-moon');
+    let sun = document.querySelector('.fa-sun');
+    let body = document.querySelector('body');
+    if (darkMode == 'true'){
+        body.classList.add('black');
+        btn.style.left='37px';
+        btn.style.background="#072846";
+        moon.style.color='white';
+        sun.style.color='black';
+    }
+})
+// Désactivation du mode sombre
+function LeftClick(){
+    let btn = document.getElementById('btn');
+    let moon = document.querySelector('.fa-moon');
+    let sun = document.querySelector('.fa-sun');
+    let body = document.querySelector('body');
+    sun.style.color='white';
+    btn.style.left='0px';
+    btn.style.background="#f0bc6f";
+    moon.style.color='black';
+    body.classList.remove('black');
+    localStorage.setItem('darkMode', 'false');
+}
+// Activation du mode sombre
+function RightClick(){
+    let btn = document.getElementById('btn');
+    let moon = document.querySelector('.fa-moon');
+    let sun = document.querySelector('.fa-sun');
+    let body = document.querySelector('body');
+    btn.style.left='37px';
+    btn.style.background="#072846";
+    moon.style.color='white';
+    sun.style.color='black';
+    body.classList.add('black');
+    localStorage.setItem('darkMode', 'true');
+}
 
 // FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE
+
 //clear input au chargement
 // Affichage modale
 function activeModal(){
@@ -318,25 +361,21 @@ function dataForm(){
     const mail = document.getElementById('email').value;
     const message = document.getElementById('message').value;   
     if (lastname == "" || lastname.length > 50){
-        console.log("nom vide")
         theError.textContent = `Erreur : le nom est obligatoire, maximum 50 caractères.`;
         theError.style.color="red";
         return false;
     }
     if (firstname == "" || firstname.length > 20){
-        console.log("prenom vide")
         theError.textContent = "Erreur : le prénom est obligatoire, maximum 20 caractères.";
         theError.style.color="red";
         return false;
     }
     if(!mail.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/)){
-        console.log("mail invalide")
         theError.textContent = "Erreur: mail invalide";
         theError.style.color="red";
         return false;
     }
     if (message ==""){
-        console.log("message vide")
         theError.textContent = "Erreur : Vous devez écrire un message";
         theError.style.color="red";
         return false;
@@ -373,11 +412,3 @@ if (formBtn) {
         theError.style.color="darkgreen";
     })
 }
-
-
-
-
-
-// lors de l'appuie sur le bouton envoie
-// bloqué envoie si erreur 
-// sinon afficher modale confirmation

@@ -20,10 +20,65 @@ html{
         margin: 0em 15em 0em 15em;
         @extend %disFlexCol;
         min-height: 100vh;
+        &.black{
+            background-color: rgba(71, 71, 71, 0.85);
+            color:white;
+            .navigation a{
+                color:white;
+                &:hover{
+                    color:rgb(166, 139, 241);
+                    background-color:rgba(255, 13, 215, 0.4);
+                }
+            }
+            .card-pro{
+                background-color: rgb(39, 39, 39)!important;
+            }
+            .card-mentions{
+                background-color: rgb(39, 39, 39)!important;
+            }
+            .gitProfilePicture{
+                >img{
+                    border:solid 2px map-get(c.$colors,rose)!important;
+                }
+            }
+
+        }
         >header{
             >.navigation{
                 margin-top:0.5em;
                 @include m.navigation_bar;
+            }
+            .form-box{
+                margin-top:0.5em;
+                .fa-sun{
+                    color:white;
+                }
+                .button-box{
+                    width: 80px;
+                    position: relative;
+                    border-radius: 30px;
+                    background-color: #fff;
+                    border:solid 2px black;
+                    #btn{
+                        left:0;
+                        top:0;
+                        position:absolute;
+                        width:40px;
+                        height: 100%;
+                        background: #f0bc6f;
+                        border-radius: 30px;
+                        transition: 0.5s;
+                    }
+                    .toggle-btn{
+                        padding:5px 10px;
+                        cursor: pointer;
+                        background-color: transparent;
+                        border:0;
+                        outline:none;
+                        position:relative;
+                        text-align: center;
+                    }
+                }
             }
         }
         // MAIN
@@ -68,6 +123,7 @@ html{
                             width: 20em;
                             @extend %height20;
                             border-radius: 50%;
+                            border:solid 2px map-get(c.$colors,bleuClair);
                         }
                     }
                 }
@@ -232,9 +288,16 @@ html{
     html{
         >body{
             >header{
-                .navigation ul{
-                    flex-direction:column;
-                    text-align: center;
+                .navigation{
+                    ul{
+                        flex-direction:column;
+                        text-align: center;
+                    }
+                    .form-box{
+                        .button-box{
+                            margin-left:39%;
+                        }
+                    }
                 }
             }
             margin: 0;

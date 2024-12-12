@@ -36,6 +36,21 @@
   animation: fadeUp 1s ease-in-out;
 }
 
+@keyframes slideUpInf {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.fade-up-inf {
+  animation: slideUpInf 2s infinite ease;
+}
+
 @keyframes fadeRight {
   from {
     opacity: 0;
@@ -255,6 +270,26 @@ html body {
   margin: 0em 15em 0em 15em;
   min-height: 100vh;
 }
+html body.black {
+  background-color: rgba(71, 71, 71, 0.85);
+  color: white;
+}
+html body.black .navigation a {
+  color: white;
+}
+html body.black .navigation a:hover {
+  color: rgb(166, 139, 241);
+  background-color: rgba(255, 13, 215, 0.4);
+}
+html body.black .card-pro {
+  background-color: rgb(39, 39, 39) !important;
+}
+html body.black .card-mentions {
+  background-color: rgb(39, 39, 39) !important;
+}
+html body.black .gitProfilePicture > img {
+  border: solid 2px #de4269 !important;
+}
 html body > header > .navigation {
   margin-top: 0.5em;
 }
@@ -276,6 +311,38 @@ html body > header > .navigation ul > li > a:hover {
   border-radius: 10px 5px 5px;
   color: rgb(255, 13, 215);
   cursor: pointer;
+}
+html body > header .form-box {
+  margin-top: 0.5em;
+}
+html body > header .form-box .fa-sun {
+  color: white;
+}
+html body > header .form-box .button-box {
+  width: 80px;
+  position: relative;
+  border-radius: 30px;
+  background-color: #fff;
+  border: solid 2px black;
+}
+html body > header .form-box .button-box #btn {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 40px;
+  height: 100%;
+  background: #f0bc6f;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+html body > header .form-box .button-box .toggle-btn {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
 }
 html body > main {
   padding-top: 1em;
@@ -306,6 +373,7 @@ html body > main > .container > #container-home .gitProfilePicture > img {
      object-fit: cover;
   width: 20em;
   border-radius: 50%;
+  border: solid 2px #0bdfe0;
 }
 html body > main .projects #filterbar {
   margin-bottom: 1em;
@@ -422,6 +490,9 @@ html body footer {
   html > body > header .navigation ul {
     flex-direction: column;
     text-align: center;
+  }
+  html > body > header .navigation .form-box .button-box {
+    margin-left: 39%;
   }
   html > body main #container-home h1 {
     font-size: 5em !important;
