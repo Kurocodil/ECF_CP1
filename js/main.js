@@ -1,3 +1,6 @@
+
+// NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION
+
 // Fonction Désaffichage pages
 function hidePages(){
     let pages = document.querySelectorAll('.page');                                 // Tableau de toutes les pages
@@ -5,7 +8,7 @@ function hidePages(){
         page.style.display='none';                                                  // Cacher la page
     })
 }
-// Fonction navigation
+// Navigation des pages
 function navFunction() {
     let urlSettings = window.location.hash || '#home';                              // récupérer le Lien actuel, sinon mettre #home
     let resume = document.querySelector('#container-resume');                       // Récupération div CV
@@ -277,7 +280,7 @@ if (!urlActuel.match(/\/(contact|mentions)\.html$/)){
     navFunction();
 }
 
-// Filtre projets
+// FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET FILTRE PROJET
 function filterbar(){
     const Filtre = document.getElementById("filter").value.toLowerCase();           // Récupère l'entrée user en minuscule
     const Tab = document.querySelectorAll('.card-pro');                             // Créer un tableau de toutes les cartes
@@ -291,7 +294,8 @@ function filterbar(){
     })
 }
 
-//Mode sombre
+// MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE MODE SOMBRE
+
 // Vérification si le mode sombre est activé (pour le garder entre les pages)
 window.addEventListener('DOMContentLoaded',()=>{
     const darkMode = localStorage.getItem('darkMode');
@@ -308,7 +312,7 @@ window.addEventListener('DOMContentLoaded',()=>{
         sun.style.color='black';
     }
 })
-var darkMode = false;
+// Désactivation du mode sombre
 function LeftClick(){
     let btn = document.getElementById('btn');
     let moon = document.querySelector('.fa-moon');
@@ -321,6 +325,7 @@ function LeftClick(){
     body.classList.remove('black');
     localStorage.setItem('darkMode', 'false');
 }
+// Activation du mode sombre
 function RightClick(){
     let btn = document.getElementById('btn');
     let moon = document.querySelector('.fa-moon');
@@ -334,14 +339,8 @@ function RightClick(){
     localStorage.setItem('darkMode', 'true');
 }
 
-
-
-
-
-
-
-
 // FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE FORMULAIRE
+
 //clear input au chargement
 // Affichage modale
 function activeModal(){
@@ -417,11 +416,3 @@ if (formBtn) {
         theError.style.color="darkgreen";
     })
 }
-
-
-
-
-
-// lors de l'appuie sur le bouton envoie
-// bloqué envoie si erreur 
-// sinon afficher modale confirmation
