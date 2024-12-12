@@ -275,6 +275,7 @@ function navFunction() {
     window.addEventListener('DOMContentLoaded',navFunction);                        // Ecouteur qui une fois le DOM chargé, execute navFunction
     window.addEventListener('hashchange', navFunction);                             // Ecouteur qui execute navFunction après un changement de lien
 }
+
 let urlActuel = window.location.href;
 if (!urlActuel.match(/\/(contact|mentions)\.html$/)){
     navFunction();
@@ -303,7 +304,6 @@ window.addEventListener('DOMContentLoaded',()=>{
     let moon = document.querySelector('.fa-moon');
     let sun = document.querySelector('.fa-sun');
     let body = document.querySelector('body');
-    console.log('Dark mode script is running on this page.');
     if (darkMode == 'true'){
         body.classList.add('black');
         btn.style.left='37px';
@@ -361,25 +361,21 @@ function dataForm(){
     const mail = document.getElementById('email').value;
     const message = document.getElementById('message').value;   
     if (lastname == "" || lastname.length > 50){
-        console.log("nom vide")
         theError.textContent = `Erreur : le nom est obligatoire, maximum 50 caractères.`;
         theError.style.color="red";
         return false;
     }
     if (firstname == "" || firstname.length > 20){
-        console.log("prenom vide")
         theError.textContent = "Erreur : le prénom est obligatoire, maximum 20 caractères.";
         theError.style.color="red";
         return false;
     }
     if(!mail.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/)){
-        console.log("mail invalide")
         theError.textContent = "Erreur: mail invalide";
         theError.style.color="red";
         return false;
     }
     if (message ==""){
-        console.log("message vide")
         theError.textContent = "Erreur : Vous devez écrire un message";
         theError.style.color="red";
         return false;
