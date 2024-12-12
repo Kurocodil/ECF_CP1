@@ -277,30 +277,6 @@ if (!urlActuel.match(/\/(contact|mentions)\.html$/)){
     navFunction();
 }
 
-//Mode sombre
-function LeftClick(){
-    let btn = document.getElementById('btn');
-    let moon = document.querySelector('.fa-moon');
-    let sun = document.querySelector('.fa-sun');
-    let body = document.querySelector('body');
-    sun.style.color='white';
-    btn.style.left='0px';
-    btn.style.background="#f0bc6f";
-    moon.style.color='black';
-    body.classList.remove('black');
-}
-function RightClick(){
-    let btn = document.getElementById('btn');
-    let moon = document.querySelector('.fa-moon');
-    let sun = document.querySelector('.fa-sun');
-    let body = document.querySelector('body');
-    btn.style.left='37px';
-    btn.style.background="#072846";
-    moon.style.color='white';
-    sun.style.color='black';
-    body.classList.add('black');
-}
-
 // Filtre projets
 function filterbar(){
     const Filtre = document.getElementById("filter").value.toLowerCase();           // Récupère l'entrée user en minuscule
@@ -314,6 +290,51 @@ function filterbar(){
         }
     })
 }
+
+//Mode sombre
+// Vérification si le mode sombre est activé (pour le garder entre les pages)
+window.addEventListener('DOMContentLoaded',()=>{
+    const darkMode = localStorage.getItem('darkMode');
+    let btn = document.getElementById('btn');
+    let moon = document.querySelector('.fa-moon');
+    let sun = document.querySelector('.fa-sun');
+    let body = document.querySelector('body');
+    console.log('Dark mode script is running on this page.');
+    if (darkMode == 'true'){
+        body.classList.add('black');
+        btn.style.left='37px';
+        btn.style.background="#072846";
+        moon.style.color='white';
+        sun.style.color='black';
+    }
+})
+var darkMode = false;
+function LeftClick(){
+    let btn = document.getElementById('btn');
+    let moon = document.querySelector('.fa-moon');
+    let sun = document.querySelector('.fa-sun');
+    let body = document.querySelector('body');
+    sun.style.color='white';
+    btn.style.left='0px';
+    btn.style.background="#f0bc6f";
+    moon.style.color='black';
+    body.classList.remove('black');
+    localStorage.setItem('darkMode', 'false');
+}
+function RightClick(){
+    let btn = document.getElementById('btn');
+    let moon = document.querySelector('.fa-moon');
+    let sun = document.querySelector('.fa-sun');
+    let body = document.querySelector('body');
+    btn.style.left='37px';
+    btn.style.background="#072846";
+    moon.style.color='white';
+    sun.style.color='black';
+    body.classList.add('black');
+    localStorage.setItem('darkMode', 'true');
+}
+
+
 
 
 
